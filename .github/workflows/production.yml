@@ -30,7 +30,7 @@ jobs:
           PORT: ${{ secrets.PROD_PORT }}
           BRANCH: master
         with:
-          name: alsharp/voicesofcaptivenations.org/voicesofcaptivenations
+          name: freekalmykia/voicesofcaptivenations.org/voicesofcaptivenations
           registry: ghcr.io
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets. GITHUB_TOKEN }}
@@ -51,7 +51,7 @@ jobs:
           envs: GITHUB_USERNAME, GITHUB_TOKEN
           script: |
             docker login ghcr.io -u $GITHUB_USERNAME -p $GITHUB_TOKEN
-            docker pull ghcr.io/alsharp/voicesofcaptivenations.org/voicesofcaptivenations:latest
+            docker pull ghcr.io/freekalmykia/voicesofcaptivenations.org/voicesofcaptivenations:latest
             docker stop voicesofcaptivenations
             docker system prune -f
-            docker run --restart always --name voicesofcaptivenations -dit -p 5023:5023 ghcr.io/alsharp/voicesofcaptivenations.org/voicesofcaptivenations:latest
+            docker run --restart always --name voicesofcaptivenations -dit -p 5023:5023 ghcr.io/freekalmykia/voicesofcaptivenations.org/voicesofcaptivenations:latest
