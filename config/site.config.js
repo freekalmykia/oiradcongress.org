@@ -1,15 +1,15 @@
 export default {
   "metaData": {
-    "title" : "Banter | Multipurpose NextJS Blog Template",
-    "description" : "Banter - a modern, stylish Tailwind CSS template for any blog, magazine, or news site.",
-    "author" : "Tailwind Awesome",
-    "keyword" : "magazine, multipurpose, react, nextjs, blog, template",
+    "title" : "Voices of Captive Nations",
+    "description" : "Voices of Captive Nations tells the world about nations held captive by Moscow",
+    "author" : "Voices of Nations held captive by moscow",
+    "keyword" : "captive nations",
     "ogImage" : "/images/ogimage.jpg"
   },
-  "baseURL" : "https://banter.tailwindawesome.com/",
+  "baseURL" : "https://voicesofcaptivenations.org/",
   "logo" : "/images/banter-logo.png",
   "logoText" : "Banter",
   "favicon" : "/images/banter-icon-logo.png",
   "postPerPage" : 6,
-  "copyright" : "© 2022 Banter. All rights reserved."
+  "copyright" : "© 2022 Voices of Captive Nations. All rights reserved."
 }
