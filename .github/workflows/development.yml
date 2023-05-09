@@ -30,7 +30,7 @@ jobs:
           PORT: ${{ secrets.DEV_PORT }}
           BRANCH: develop
         with:
-          name: freekalmykia/voicesofcaptivenations.org/voicesofcaptivenations_dev
+          name: freekalmykia/oiradcongress.org/oiradcongress_dev
           registry: ghcr.io
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets. GITHUB_TOKEN }}
@@ -51,7 +51,7 @@ jobs:
           envs: GITHUB_USERNAME, GITHUB_TOKEN
           script: |
             docker login ghcr.io -u $GITHUB_USERNAME -p $GITHUB_TOKEN
-            docker pull ghcr.io/freekalmykia/voicesofcaptivenations.org/voicesofcaptivenations_dev:latest
-            docker stop voicesofcaptivenations_dev
+            docker pull ghcr.io/freekalmykia/oiradcongress.org/oiradcongress_dev:latest
+            docker stop oiradcongress_dev
             docker system prune -f
-            docker run --restart always --name voicesofcaptivenations_dev -dit -p 5024:5024 ghcr.io/freekalmykia/voicesofcaptivenations.org/voicesofcaptivenations_dev:latest
+            docker run --restart always --name oiradcongress_dev -dit -p 5201:5201 ghcr.io/freekalmykia/oiradcongress.org/oiradcongress_dev:latest
