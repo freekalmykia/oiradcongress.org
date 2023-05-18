@@ -3,11 +3,11 @@ import path from "path"
 import matter from "gray-matter"
 
 export function getAuthors() {
-  const authorFiles = fs.readdirSync(path.join("content/authors"))
+  const authorFiles = fs.readdirSync(path.join("content/people"))
   const authors = authorFiles.map((filename) => {
     const slug = filename.replace(".md", "")
     const authorContents = fs.readFileSync(
-      path.join("content/authors", filename),
+      path.join("content/people", filename),
       "utf8"
     )
 
@@ -18,6 +18,10 @@ export function getAuthors() {
       frontmatter,
       bio,
     }
+  })
+  .filter(({ frontmatter: { role } }) => {
+    console.log('role: ', role);
+    return role === 'author';
   })
 
   return authors

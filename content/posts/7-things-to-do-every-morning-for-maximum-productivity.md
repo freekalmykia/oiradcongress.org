@@ -3,10 +3,10 @@ title: "7 Things You Can Do To Be More Productive in the Morning (That Don't Inv
 description: "Lorem ipsum dolor sit amet tempus bendum labore laoreet.Hendrerit lobortis a leo curabitur faucibus sapien ullamcorper do labore odio."
 image: "/images/posts/archive-41.jpeg"
 date: "2022-02-05T16:56:47+06:00"
-author: "Veronica Mars"
+author: "Batyr Boromangnaev"
 time_to_read_in_minutes: 12
 views: 2620
-category: "Productivity"
+category: "News"
 tags: ["Growth", "Tips", "Self-improvement", "Morning Routine"]
 group: "Archived"
 ---

@@ -1,45 +1,25 @@
 export default {
   "mainMenu": [
     {
-      "name": "Technology",
-      "link": "/categories/technology"
+      "name": "News",
+      "link": "/categories/news"
     },
     {
-      "name": "Startup",
-      "link": "/categories/startup"
+      "name": "Opinions",
+      "link": "/categories/opinions"
     },
     {
-      "name": "Science",
-      "link": "/categories/science"
+      "name": "History",
+      "link": "/categories/history"
     },
     {
       "name": "Culture",
       "link": "/categories/culture"
     },
     {
-      "name": "Pages",
+      "name": "Congress",
       "link": "#",
       "submenu": [
-        {
-          "name": "Home",
-          "link": "/"
-        },
-        {
-          "name": "Category page",
-          "link": "/categories/technology"
-        },
-        {
-          "name": "Post",
-          "link": "/posts/apple-payment-terminals-in-fintech-push"
-        },
-        {
-          "name": "Author page",
-          "link": "/authors/mark-jack"
-        },
-        {
-          "name": "Tag page",
-          "link": "/tags/tips"
-        },
         {
           "name": "About us",
           "link": "/about"
@@ -52,10 +32,6 @@ export default {
           "name": "Privacy policy",
           "link": "/privacy"
         },
-        {
-          "name": "404 page",
-          "link": "/404"
-        }
       ]
     }
   ],

@@ -1,15 +1,15 @@
 export default {
   "metaData": {
-    "title" : "Banter | Multipurpose NextJS Blog Template",
-    "description" : "Banter - a modern, stylish Tailwind CSS template for any blog, magazine, or news site.",
-    "author" : "Tailwind Awesome",
-    "keyword" : "magazine, multipurpose, react, nextjs, blog, template",
-    "ogImage" : "/images/ogimage.jpg"
+    "title" : "Oirat-Kalmyk Congress",
+    "description" : "Political organization of Oirat-Kalmyk people",
+    "author" : "Free Kalmykia Foundation, Inc.",
+    "keyword" : "oirats, oirads, kalmyks, Kalmykia, captive nations",
+    "ogImage" : "/images/ogimage.png"
   },
-  "baseURL" : "https://banter.tailwindawesome.com/",
-  "logo" : "/images/banter-logo.png",
+  "baseURL" : "https://oiradcongress.org/",
+  "logo" : "/images/oirad-logo.jpg",
   "logoText" : "Banter",
-  "favicon" : "/images/banter-icon-logo.png",
+  "favicon" : "/images/oirad-logo.jpg",
   "postPerPage" : 6,
-  "copyright" : "© 2022 Banter. All rights reserved."
+  "copyright" : "© 2023 Oirat-Kalmyk Congress. All rights reserved."
 }

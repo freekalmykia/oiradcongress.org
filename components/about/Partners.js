@@ -11,13 +11,23 @@ export default function Partners({partnerSection}) {
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-2 sm:gap-5 lg:gap-6 lg:grid-cols-3">
             
             {partnerSection.partners.map((partner) => (
-              <a key={partner.name} href={partner.link} className="overflow-hidden">
-                <div className="flex items-center justify-center w-full transition duration-300 ease-in-out h-36 rounded-3xl bg-gray-50 hover:bg-gray-100 group">
-                  <img
-                    src={partner.logo}
-                    alt={partner.name}
-                    className="w-auto h-6 transition duration-300 ease-in-out opacity-70 sm:h-8 group-hover:opacity-95"
-                  />
+              <a key={partner.name} href={partner.link} className="overflow-hidden" target="_blank" rel="noreferrer">
+                <div className="flex items-center justify-center md:justify-start w-full transition duration-300 ease-in-out h-36 rounded-3xl bg-gray-50 hover:bg-gray-100 group px-12">
+                  <div className="flex justify-center md:justify-start min-w-[130px] mr-3">
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="w-auto h-16 transition duration-300 ease-in-out opacity-70 sm:h-22 group-hover:opacity-95"
+                    />
+                  </div>
+                  <div>
+                    <span className="hidden md:block">
+                      {partner.name}
+                    </span>
+                    <span className="hidden md:block">
+                      {partner.subname}
+                    </span>
+                  </div>
                 </div>
               </a>
             ))}
