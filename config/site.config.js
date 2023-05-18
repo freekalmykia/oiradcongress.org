@@ -4,12 +4,12 @@ export default {
     "description" : "Political organization of Oirat-Kalmyk people",
     "author" : "Free Kalmykia Foundation, Inc.",
     "keyword" : "oirats, oirads, kalmyks, Kalmykia, captive nations",
-    "ogImage" : "/images/ogimage.jpg"
+    "ogImage" : "/images/ogimage.png"
   },
   "baseURL" : "https://oiradcongress.org/",
-  "logo" : "/images/banter-logo.png",
+  "logo" : "/images/oirad-logo.jpg",
   "logoText" : "Banter",
-  "favicon" : "/images/banter-icon-logo.png",
+  "favicon" : "/images/oirad-logo.jpg",
   "postPerPage" : 6,
   "copyright" : "© 2023 Oirat-Kalmyk Congress. All rights reserved."
 }

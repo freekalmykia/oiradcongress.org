@@ -20,8 +20,8 @@ export default function Footer() {
                 <Image 
                   src={siteConfig.logo} 
                   alt={siteConfig.logoText}
-                  width={144}
-                  height={40}
+                  width={43}
+                  height={36}
                   layout="fixed"
                   placeholder="blur"
                   blurDataURL={siteConfig.logo}

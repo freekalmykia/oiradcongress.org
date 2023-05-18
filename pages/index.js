@@ -29,7 +29,7 @@ export default function Home({
 }) {
   return (
     <Layout>
-      <FeaturedArticles featuredPosts={featuredPosts.slice(0,7)} authors={authors} />
+      { featuredPosts.length && <FeaturedArticles featuredPosts={featuredPosts.slice(0,7)} authors={authors} /> }
       <Topics categories={categories} />
       
       {/* Feed */}
@@ -49,7 +49,7 @@ export default function Home({
         </div>
       </section>
 
-      <BannerArticle post={featuredPosts[featuredPosts.length - 1]} authors={authors} />
+      { featuredPosts.length && <BannerArticle post={featuredPosts[featuredPosts.length - 1]} authors={authors} /> }
 
       {/* Feed 2 */}
       <section className="relative max-w-xl px-4 py-12 mx-auto lg:max-w-screen-xl sm:py-16 lg:py-24 sm:px-12 md:max-w-3xl lg:px-8">

@@ -26,7 +26,7 @@ export default function Navbar() {
                     <Image 
                       src={siteConfig.favicon} 
                       alt={siteConfig.logoText}
-                      width={36}
+                      width={43}
                       height={36}
                       layout="fixed"
                       className="w-9 h-9"
@@ -34,15 +34,18 @@ export default function Navbar() {
                   </a>
                 </Link>
                 <Link href="/">
-                  <a className="hidden lg:block h-9">
+                  <a className="hidden lg:flex h-9">
                     <Image 
                       src={siteConfig.logo} 
                       alt={siteConfig.logoText}
-                      width={129.6}
+                      width={43}
                       height={36}
                       layout="fixed"
                       className="w-auto h-9"
                     />
+                    <h1 className="ml-3 font-semibold text-3xl">
+                      Oirat-Kalmyk Congress
+                    </h1>
                   </a>
                 </Link>
               </div>
@@ -58,7 +61,7 @@ export default function Navbar() {
                           <Menu.Button
                             className={`flex items-center px-3 py-1 font-medium text-md group ${open ? 'text-red-700' : 'text-gray-800 hover:text-red-700 transition duration-300 ease-in-out'}`}
                           >
-                            <span>Pages</span>
+                            <span>{link.name}</span>
                             <ChevronDownIcon
                               className={`w-5 h-5 ml-2 transform duration-300 ${open ? 'rotate-180 text-red-700' : 'text-gray-600 group-hover:text-red-700'}`}
                               aria-hidden="true"
@@ -96,7 +99,7 @@ export default function Navbar() {
               </div>
 
               {/* Search */}
-              <div className="relative w-full h-10 ml-6 max-w-xxs rounded-3xl">
+              {/* <div className="relative w-full h-10 ml-6 max-w-xxs rounded-3xl">
                 <form className="transition duration-300 ease-in-out rounded-3xl group">
                   <div className="absolute inset-y-0 flex items-center left-3">
                     <SearchIcon className="w-5 h-5 text-gray-400" />
@@ -109,7 +112,7 @@ export default function Navbar() {
                     autoComplete="email" 
                   />
                 </form>
-              </div>
+              </div> */}
 
               {/* Hamburger menu button */}
               <Disclosure.Button className="flex items-center justify-center p-3 ml-6 transition duration-300 ease-in-out cursor-pointer rounded-xl bg-gray-50 hover:bg-gray-100 md:hidden group focus:outline-none">
