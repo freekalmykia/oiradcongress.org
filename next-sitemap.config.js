@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://kalmuckroad.org',
+    siteUrl: 'https://oiradcongress.org',
     generateRobotsTxt: true
 }
