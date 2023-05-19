@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { getSocialIconComponent } from '../../utils/getSocialIconComponent'
 
 export default function Authors({authorSection, authors}) {
+  if (!authors.length) return null;
   return (
     <section className="pt-12 sm:pt-20 lg:pt-28 bg-gray-50">
       <div className="max-w-xl px-4 mx-auto sm:max-w-3xl sm:px-6 md:px-8 lg:max-w-screen-xl">

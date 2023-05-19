@@ -29,7 +29,7 @@ export default function Home({
 }) {
   return (
     <Layout>
-      { featuredPosts.length && <FeaturedArticles featuredPosts={featuredPosts.slice(0,7)} authors={authors} /> }
+      <FeaturedArticles featuredPosts={featuredPosts.slice(0,7)} authors={authors} />
       <Topics categories={categories} />
       
       {/* Feed */}
@@ -40,7 +40,7 @@ export default function Home({
           {/* Sidebar */}
           <div className="w-full max-w-xl px-4 mx-auto mt-12 space-y-8 sm:mt-16 lg:mt-0 md:max-w-3xl sm:px-6 md:px-8 lg:px-0 lg:col-span-1 lg:max-w-none">
             
-            <SidebarArticles posts={featuredPosts.slice(7,11)} header="Featured" />
+            <SidebarArticles posts={featuredPosts.slice(0,11)} header="Featured" />
             <SidebarTags tags={tags.slice(0,10)} header="Popular tags" />
             <SidebarSocialLinks />
             <SidebarInstagramFeed feed={instagramFeed} />
@@ -49,14 +49,14 @@ export default function Home({
         </div>
       </section>
 
-      { featuredPosts.length && <BannerArticle post={featuredPosts[featuredPosts.length - 1]} authors={authors} /> }
+      <BannerArticle post={featuredPosts[featuredPosts.length - 1]} authors={authors} />
 
       {/* Feed 2 */}
       <section className="relative max-w-xl px-4 py-12 mx-auto lg:max-w-screen-xl sm:py-16 lg:py-24 sm:px-12 md:max-w-3xl lg:px-8">
         <div className="w-full lg:grid lg:gap-8 xl:gap-12 lg:grid-cols-3">
 
           <div className="col-span-2">
-            <SingleColFeed posts={archivedPosts.slice(6,13)} authors={authors} />
+            <SingleColFeed posts={archivedPosts.slice(0,7)} authors={authors} />
           </div>
 
           {/* Sidebar */}

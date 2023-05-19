@@ -20,8 +20,8 @@ export function getAuthors() {
     }
   })
   .filter(({ frontmatter: { role } }) => {
-    console.log('role: ', role);
-    return role === 'author';
+    // return role === 'author';
+    return role === 'member';
   })
 
   return authors

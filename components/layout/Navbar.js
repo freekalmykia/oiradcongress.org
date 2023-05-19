@@ -14,7 +14,7 @@ export default function Navbar() {
     <Disclosure as="header" className="relative bg-transparent border-b border-gray-300/60">
       {({ open }) => (
         <>
-          <nav className="flex items-center h-20 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <nav className="flex items-center h-24 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             
             {/* Main navbar for large screens */}
             <div className="flex items-center justify-between w-full">
@@ -24,12 +24,12 @@ export default function Navbar() {
                 <Link href="/">
                   <a className="lg:hidden h-9">
                     <Image 
-                      src={siteConfig.favicon} 
+                      src={siteConfig.logo} 
                       alt={siteConfig.logoText}
-                      width={43}
+                      width={151}
                       height={36}
                       layout="fixed"
-                      className="w-9 h-9"
+                      className="w-12 h-9"
                     />
                   </a>
                 </Link>
@@ -38,14 +38,11 @@ export default function Navbar() {
                     <Image 
                       src={siteConfig.logo} 
                       alt={siteConfig.logoText}
-                      width={43}
+                      width={151}
                       height={36}
                       layout="fixed"
                       className="w-auto h-9"
                     />
-                    <h1 className="ml-3 font-semibold text-3xl">
-                      Oirat-Kalmyk Congress
-                    </h1>
                   </a>
                 </Link>
               </div>
