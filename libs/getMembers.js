@@ -20,7 +20,6 @@ export function getMembers() {
     }
   })
   .filter(({ frontmatter: { role, order } }) => {
-    console.log('role, order ', role, ' ', order);
     return role === 'member';
   })
 

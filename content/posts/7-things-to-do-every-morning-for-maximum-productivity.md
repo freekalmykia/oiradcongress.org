@@ -7,7 +7,7 @@ author: "Batyr Boromangnaev"
 time_to_read_in_minutes: 12
 views: 2620
 category: "News"
-tags: ["Growth", "Tips", "Self-improvement", "Morning Routine"]
+tags: []
 group: "Archived"
 ---
 Aliqua venenatis gravida et urna molestie leo adipiscing dolore leo euismod quam. Aenean porta curabitur convallis pellentesque velit platea at neque phasellus. Aliquet pellentesque senectus velit magna ultrices iaculis justo habitasse vitae neque ornare nullam leo. Est facilisis mauris purus senectus nunc convallis praesent pharetra dictum dui molestie iaculis.

@@ -19,7 +19,7 @@ export default function About({about, authors, members, newsletter}) {
       <AboutHeader header={about.frontmatter.header} />
       <AboutContent content={about.content} />
       <Partners partnerSection={about.frontmatter.partner_section} />
-      { authors.length && <Authors authorSection={about.frontmatter.author_section} authors={authors} /> }
+      <Authors authorSection={about.frontmatter.author_section} authors={authors} />
       <Members memberSection={about.frontmatter.member_section} members={members} />
       <Careers careers={about.frontmatter.careers} />
       <Newsletter newsletter={newsletter} />

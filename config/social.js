@@ -1,18 +1,14 @@
 export default [
   {
     name: 'facebook',
-    href: '#'
+    href: 'https://www.facebook.com/oirad.congress'
   },
   {
     name: 'instagram',
-    href: '#'
+    href: 'https://www.instagram.com/voices_of_nations/'
   },
   {
     name: 'twitter',
-    href: '#'
+    href: 'https://twitter.com/FreeKalmykia'
   },
-  {
-    name: 'linkedin',
-    href: '#'
-  }
 ]

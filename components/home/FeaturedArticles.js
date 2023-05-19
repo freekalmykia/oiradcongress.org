@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { formatDate } from '../../utils/formatDate'
 
 export default function FeaturedArticles({authors, featuredPosts}) {
+  if (!featuredPosts.length) return null;
   return (
     <section className="pt-12 sm:pt-16 lg:pt-20 bg-gray-50">
       <div className="max-w-2xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-screen-2xl lg:flex lg:items-start">

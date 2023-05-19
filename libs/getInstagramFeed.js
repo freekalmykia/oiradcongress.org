@@ -6,7 +6,7 @@ export function getInstagramFeed() {
   const instagramFeed = instagramImages.map((filename) => {
     return {
       image: `/images/instagram/${filename}`, 
-      href: "#"
+      href: `https://www.instagram.com/p/${filename.split('.')[0]}`
     }
   })
 

@@ -7,8 +7,8 @@ export default {
     "ogImage" : "/images/ogimage.png"
   },
   "baseURL" : "https://oiradcongress.org/",
-  "logo" : "/images/oirad-logo.jpg",
-  "logoText" : "Banter",
+  "logo" : "/images/oiracongress_logo_1.png",
+  "logoText" : "Oirad-Kalmyk Congress",
   "favicon" : "/images/oirad-logo.jpg",
   "postPerPage" : 6,
   "copyright" : "© 2023 Oirat-Kalmyk Congress. All rights reserved."
