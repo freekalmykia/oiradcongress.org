@@ -1,8 +1,8 @@
 ---
-title: "About"
-description: "This is a mock description for about page"
+title: "Oirat-Kalmyk Congress: About"
+description: "Oirat-Kalmyk Congress is fighting Moscow Imperialism by pushing an idea of independent and democratic Kalmykia."
 header:
-  heading:  "Fighting Moscow Imperialism by pushing the idea of independent democratic Kalmykia."
+  heading:  "Fighting Moscow Imperialism by pushing an idea of independent and democratic Kalmykia."
   subheader: "About Congress"
   image: "/images/about/about-header.jpg"
 partner_section:
