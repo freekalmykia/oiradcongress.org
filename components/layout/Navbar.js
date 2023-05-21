@@ -14,34 +14,34 @@ export default function Navbar() {
     <Disclosure as="header" className="relative bg-transparent border-b border-gray-300/60">
       {({ open }) => (
         <>
-          <nav className="flex items-center h-24 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <nav className="flex items-center h-24 lg:h-32 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             
             {/* Main navbar for large screens */}
-            <div className="flex items-center justify-between w-full">
+            <div className="flex h-14 lg:h-[72px] items-center justify-between w-full">
 
               {/* Logo */}
-              <div className="flex items-center shrink-0">
+              <div className="flex h-14 lg:h-[72px] items-center shrink-0">
                 <Link href="/">
-                  <a className="lg:hidden h-9">
+                  <a className="lg:hidden h-14">
                     <Image 
-                      src={siteConfig.logo} 
+                      src={siteConfig.logoCropped} 
                       alt={siteConfig.logoText}
-                      width={151}
-                      height={36}
+                      width={242}
+                      height={56}
                       layout="fixed"
-                      className="w-12 h-9"
+                      className="w-12 h-14"
                     />
                   </a>
                 </Link>
                 <Link href="/">
-                  <a className="hidden lg:flex h-9">
+                  <a className="hidden lg:flex h-[72px]">
                     <Image 
-                      src={siteConfig.logo} 
+                      src={siteConfig.logoFull} 
                       alt={siteConfig.logoText}
-                      width={151}
-                      height={36}
+                      width={396}
+                      height={72}
                       layout="fixed"
-                      className="w-auto h-9"
+                      className="w-auto h-[72px]"
                     />
                   </a>
                 </Link>

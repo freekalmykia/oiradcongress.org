@@ -7,7 +7,8 @@ export default {
     "ogImage" : "https://oiradcongress.org/images/ogimage.png"
   },
   "baseURL" : "https://oiradcongress.org/",
-  "logo" : "/images/oiracongress_logo_1.png",
+  "logoFull" : "/images/oiradcongress_logo_2.png",
+  "logoCropped" : "/images/oiradcongress_logo_3.png",
   "logoText" : "Oirad-Kalmyk Congress",
   "favicon" : "/images/oirad-logo.jpg",
   "postPerPage" : 6,

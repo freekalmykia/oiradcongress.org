@@ -23,8 +23,6 @@ export default function About({contact, newsletter, instagramFeed}) {
           
           {/* Contact Information */}
           <div className="space-y-16 lg:w-2/3">
-            <ContactDepartments contactInfo={contact.frontmatter.contact_info} />
-            <ContactLocations locationsInfo={contact.frontmatter.locations_info} />
             <ContactMail mailInfo={contact.frontmatter.mail_info} />
           </div>
 
