@@ -52,7 +52,7 @@ locations_info:
       state: "NY"
       postal_code: "10003"
 mail_info:
-  heading: "Send us mail"
+  heading: "Send us email"
   address:
     name: "Banter Magazine"
     po_box: "PO Box 12345"
@@ -61,4 +61,5 @@ mail_info:
     postal_code: "49548"
   additional_info: >-
       Lorem ipsum dolor sit amet ornare arcu bibendum nunc. Phasellus praesent nisi malesuada imperdiet ac velit massa velit lacus hendrerit etiam nec.
+  email_text: Send us email at oiradcongress@gmail.com
 ---

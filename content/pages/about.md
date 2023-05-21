@@ -2,7 +2,7 @@
 title: "Oirat-Kalmyk Congress: About"
 description: "Oirat-Kalmyk Congress is fighting Moscow Imperialism by pushing an idea of independent and democratic Kalmykia."
 header:
-  heading:  "Fighting Moscow Imperialism by pushing an idea of independent and democratic Kalmykia."
+  heading:  "Ending Moscow's Imperialism  by way of an Independent and Democratic Kalmykia."
   subheader: "About Congress"
   image: "/images/about/about-header.jpg"
 partner_section:
