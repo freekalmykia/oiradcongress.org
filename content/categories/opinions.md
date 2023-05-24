@@ -1,4 +1,4 @@
 ---
 name: "Opinions"
-image: "/images/categories/category-02.jpeg"
+image: "/images/categories/category-04.jpeg"
 ---
