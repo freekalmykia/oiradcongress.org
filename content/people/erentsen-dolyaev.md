@@ -1,9 +1,9 @@
 ---
-name: "Albert Sharapov"
-image: "/images/people/albert.jpg"
+name: "Erentsen Doliaev"
+image: "/images/people/erentsen.jpg"
 role: "member"
 title: "Member"
-order: 6
+order: 5
 social_links:
   - name: "twitter"
     url: "https://twitter.com/AlSharp85"

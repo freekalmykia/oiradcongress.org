@@ -1,6 +1,6 @@
 ---
 name: "Maria Ochir"
-image: "/images/people/maria.PNG"
+image: "/images/people/maria.png"
 role: "member"
 title: "Member"
 order: 3

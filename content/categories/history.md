@@ -1,4 +1,4 @@
 ---
 name: "History"
-image: "/images/categories/category-06.jpeg"
+image: "/images/categories/category-02.jpg"
 ---

@@ -1,4 +1,4 @@
 ---
 name: "Culture"
-image: "/images/categories/category-05.jpeg"
+image: "/images/categories/category-03.jpg"
 ---
