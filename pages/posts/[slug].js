@@ -22,7 +22,7 @@ export default function PostPage({
     <Layout 
       metaTitle={post.title} 
       metaDescription={post.description} 
-      ogImage={post.image}
+      ogImage={`https://oiradcongress.org${post.image}`}
     >
       <Post post={post} postContent={content} authors={authors} />
       <NextArticle post={nextArticle} />
