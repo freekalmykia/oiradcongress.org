@@ -68,7 +68,7 @@ export default function TwoColFeed({posts, authors}) {
               {/* Author */}
               <div className="flex items-center mt-5 sm:mt-6">
 
-                <Link href={`/authors/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
+                <Link href={`/people/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
                   <a className="relative w-10 h-10 rounded-xl bg-gray-50">
                     {authors.map((author) =>
                       post.frontmatter.author === author.frontmatter.name && (
@@ -86,7 +86,7 @@ export default function TwoColFeed({posts, authors}) {
 
                 <div className="ml-3">
                   
-                  <Link href={`/authors/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
+                  <Link href={`/people/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
                     <a className="relative text-sm font-medium text-gray-700 hover:underline">
                       {post.frontmatter.author}
                     </a>

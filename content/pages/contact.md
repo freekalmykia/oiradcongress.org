@@ -2,8 +2,8 @@
 title: "Contact"
 description: "We’d love to hear from you! Get in touch with us using our contact information below."
 header:
-  heading: "Contact Banter"
-  text: "Lorem ipsum dolor sit amet adipiscing pulvinar nibh enim. Iaculis justo non nibh in lacus non nibh pellentesque libero aenean tincidunt dolore. Ornare etiam praesent mattis purus vitae dapibus at."
+  heading: "Contact Congress"
+  text: "We’d love to hear from you! Get in touch with us using our contact information below."
 contact_info:
   heading: "Get in touch"
   departments:

@@ -5,13 +5,7 @@ role: "member"
 title: "Deputy Chairman"
 order: 1
 social_links:
-  - name: "twitter"
-    url: "#"
   - name: "facebook"
-    url: "#"
-  - name: "instagram"
-    url: "#"
-  - name: "linkedin"
-    url: "#"
+    url: "https://www.facebook.com/BaatarBB"
 ---
-Lorem ipsum dolor sit amet mauris quis phasellus ornare dui lectus. Laoreet habitasse eiusmod nulla odio tortor neque diam convallis morbi dolore molestie tellus faucibus pharetra.
+Batyr Boromangnaev - Oirat-Kalmyk human rights activist. In 1989, he was among the 4 people who founded the first socio-political and democratic organization in the history of the Oirat-Kalmyk people - the People's Front of Kalmykia. Deputy Chairman of the Congress of the Oirat-Kalmyk People.

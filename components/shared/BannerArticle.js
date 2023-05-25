@@ -38,7 +38,7 @@ export default function BannerArticle({post, authors}) {
             <footer className="flex items-center justify-between mt-5 sm:mt-7">
               <div className="flex items-center justify-center">
                 
-                <Link href={`/authors/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
+                <Link href={`/people/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
                   <a className="relative mr-3 rounded-lg bg-gray-50 w-7 h-7 lg:w-8 lg:h-8">
                     
                     {authors.map((author) =>
@@ -58,7 +58,7 @@ export default function BannerArticle({post, authors}) {
                 
                 <div className="text-sm lg:text-[15px] flex items-center">
                   <span className="hidden text-gray-500 sm:inline-block">By&nbsp;</span>
-                  <Link href={`/authors/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
+                  <Link href={`/people/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
                     <a className="font-medium text-gray-700 hover:underline">{post.frontmatter.author}</a>
                   </Link>
             

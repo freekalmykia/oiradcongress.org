@@ -43,7 +43,7 @@ export default function Post({post, postContent, authors}) {
 
             {/* Author meta */}
             <div className="flex items-center mt-6 sm:mt-8">
-              <Link href={`/authors/${post.author.replace(/ /g, '-').toLowerCase()}`}>
+              <Link href={`/people/${post.author.replace(/ /g, '-').toLowerCase()}`}>
                 <a className="flex-shrink-0 mr-3">
                   <div className="relative w-8 h-8 bg-gray-100 rounded-xl sm:w-9 sm:h-9">
                     {authors.map((author) =>
@@ -63,7 +63,7 @@ export default function Post({post, postContent, authors}) {
               </Link>
               <div className="text-sm lg:text-[15px] flex items-center">
                 <span className="hidden text-gray-500 sm:inline-block">By&nbsp;</span>
-                <Link href={`/authors/${post.author.replace(/ /g, '-').toLowerCase()}`}>
+                <Link href={`/people/${post.author.replace(/ /g, '-').toLowerCase()}`}>
                   <a className="font-medium text-gray-700 hover:underline">
                     {post.author}
                   </a>

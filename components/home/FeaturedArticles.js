@@ -45,7 +45,7 @@ export default function FeaturedArticles({authors, featuredPosts}) {
             
             {/* Author */}
             <div className="flex items-center mt-4 sm:mt-8">
-              <Link href={`/authors/${featuredPosts[0].frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
+              <Link href={`/people/${featuredPosts[0].frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
                 <a className="relative w-10 h-10 bg-gray-100 rounded-xl">
                   {authors.map((author, i) =>
                     featuredPosts[0].frontmatter.author === author.frontmatter.name && (
@@ -62,7 +62,7 @@ export default function FeaturedArticles({authors, featuredPosts}) {
               </Link>
               
               <div className="ml-3">
-                <Link href={`/authors/${featuredPosts[0].frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
+                <Link href={`/people/${featuredPosts[0].frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
                   <a className="text-sm font-medium text-gray-800 hover:underline">
                     {featuredPosts[0].frontmatter.author}
                   </a>
@@ -124,7 +124,7 @@ export default function FeaturedArticles({authors, featuredPosts}) {
                     
                     {/* Author meta */}
                     <div className="flex items-center justify-center">
-                      <Link href={`/authors/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
+                      <Link href={`/people/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
                         <a className="relative w-6 h-6 mr-3 bg-gray-100 rounded-lg">
                           {authors.map((author, i) =>
                             post.frontmatter.author === author.frontmatter.name && (
@@ -142,7 +142,7 @@ export default function FeaturedArticles({authors, featuredPosts}) {
 
                       <div className="text-sm">
                         <span className="text-gray-500">By </span>
-                        <Link href={`/authors/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
+                        <Link href={`/people/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
                           <a className="font-medium text-gray-700 hover:underline">
                             {post.frontmatter.author}
                           </a>
