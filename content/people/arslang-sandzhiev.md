@@ -5,13 +5,5 @@ role: "member"
 title: "Chairman"
 order: 0
 social_links:
-  - name: "twitter"
-    url: "#"
-  - name: "facebook"
-    url: "#"
-  - name: "instagram"
-    url: "#"
-  - name: "linkedin"
-    url: "#"
 ---
-Lorem ipsum dolor sit amet mauris quis phasellus ornare dui lectus. Laoreet habitasse eiusmod nulla odio tortor neque diam convallis morbi dolore molestie tellus faucibus pharetra.
+Arslang Sandzhiev - a professional journalist, laureate of the Republican Prize named after Nomto Ochirov. Author of many TV programs, including the TV chess game "Time trouble", author of documentaries about prominent people of Kalmykia. Chairman of the Congress of the Oirat-Kalmyk people.

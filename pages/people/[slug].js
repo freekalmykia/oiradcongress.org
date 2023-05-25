@@ -79,7 +79,13 @@ export async function getStaticProps({ params: { slug } }) {
   )
 
   const { data: frontmatter, content: bio } = matter(fileContents)
-  const author = { frontmatter, bio }
+  const author = {
+    frontmatter: {
+      ...frontmatter,
+      social_links: frontmatter.social_links || []
+    },
+    bio
+  }
 
   return {
     props: {

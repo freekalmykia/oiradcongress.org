@@ -45,7 +45,7 @@ export default function FeaturedArticles({authors, posts}) {
                 
                 {/* Author meta */}
                 <div className="flex items-center justify-center">
-                  <Link href={`/authors/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
+                  <Link href={`/people/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
                     <a className="relative w-6 h-6 mr-3 bg-gray-100 rounded-lg lg:hidden">
                       
                       {authors.map((author, i) =>
@@ -65,7 +65,7 @@ export default function FeaturedArticles({authors, posts}) {
                   
                   <div className="text-sm">
                     <span className="text-gray-500">By </span>
-                    <Link href={`/authors/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
+                    <Link href={`/people/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
                       <a className="font-medium text-gray-700 hover:underline">{post.frontmatter.author}</a>
                     </Link>
                     <span className="text-gray-500 lg:hidden"> · {formatDate(post.frontmatter.date)}</span>

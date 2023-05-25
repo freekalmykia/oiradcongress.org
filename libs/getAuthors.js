@@ -15,7 +15,10 @@ export function getAuthors() {
 
     return {
       slug,
-      frontmatter,
+      frontmatter: {
+        ...frontmatter,
+        social_links: frontmatter.social_links || []
+      },
       bio,
     }
   })

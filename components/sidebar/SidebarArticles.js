@@ -42,7 +42,7 @@ export default function SidebarArticles({header, posts}) {
                   <div className="flex items-center justify-center">
                     <div className="text-sm">
                       <span className="text-gray-500">By </span>
-                      <Link href={`/authors/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
+                      <Link href={`/people/${post.frontmatter.author.replace(/ /g, '-').toLowerCase()}`}>
                         <a className="font-medium text-gray-700 hover:underline" >{post.frontmatter.author}</a>
                       </Link>
                     </div>
