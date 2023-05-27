@@ -5,6 +5,11 @@ header:
   heading:  "Ending Moscow's Imperialism  by way of an Independent and Democratic Kalmykia."
   subheader: "About Congress"
   image: "/images/about/about-header.jpg"
+doc_section:
+  heading: "Documents"
+  docs:
+    - name: "Declaration on State Independence of the Republic of Kalmykia"
+      link: "/docs/declaration-of-independence"
 partner_section:
   heading: "Organizations and activist groups of captive nations"
   partners:
@@ -32,9 +37,9 @@ author_section:
   subheading: "Our authors"
   subtext: "Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam."
 member_section:
-  heading: "We are a passionate team that values great journalism"
+  heading: "We are a passionate team that brings independent and prosper Kalmykia closer"
   subheading: "Our members"
-  subtext: "Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam."
+  subtext: ""
 careers:
   heading: "Join the best team in journalism"
   text: "Quam venenatis gravida et urna molestie leo adipiscing dolore leo euismod quam. Aenean porta curabitur convallis pellentesque velit platea at neque phasellus. Aliquet pellentesque senectus velit magna ultrices iaculis justo habitasse vitae neque ornare nullam leo."
