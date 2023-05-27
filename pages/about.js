@@ -1,6 +1,7 @@
 import Layout from '../components/layout/Layout'
 import AboutHeader from '../components/about/AboutHeader'
 import AboutContent from '../components/about/AboutContent'
+import Docs from '../components/about/Docs'
 import Partners from '../components/about/Partners'
 // import Authors from '../components/about/Authors'
 import Members from '../components/about/Members'
@@ -18,10 +19,11 @@ export default function About({about, authors, members, newsletter}) {
     >
       <AboutHeader header={about.frontmatter.header} />
       <AboutContent content={about.content} />
+      <Docs docSection={about.frontmatter.doc_section} />
       <Partners partnerSection={about.frontmatter.partner_section} />
       {/* <Authors authorSection={about.frontmatter.author_section} authors={authors} /> */}
       <Members memberSection={about.frontmatter.member_section} members={members} />
-      <Careers careers={about.frontmatter.careers} />
+      {/* <Careers careers={about.frontmatter.careers} /> */}
       <Newsletter newsletter={newsletter} />
     </Layout>
   )
