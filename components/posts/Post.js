@@ -76,7 +76,6 @@ export default function Post({post, postContent, authors}) {
                 </span>
               </div>
             </div>
-            
           </div>
 
         </div>

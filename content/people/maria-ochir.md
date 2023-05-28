@@ -6,4 +6,4 @@ title: "Member"
 order: 3
 social_links:
 ---
-Maria Ochir is an archaeologist, Doctor of Historical Sciences, author of 4 scientific monographs, corresponding member of the German Archaeological Institute. Specialist on the nomads of the Scythian era of the steppes of Eurasia.
+Maria Ochir is a PhD of History, archeologist, author, corresponding member of the German Archaeological Institute and a specialist on Eurasian Nomads of the Scythian era.
