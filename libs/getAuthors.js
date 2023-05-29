@@ -22,10 +22,6 @@ export function getAuthors() {
       bio,
     }
   })
-  .filter(({ frontmatter: { role } }) => {
-    // return role === 'author';
-    return role === 'member';
-  })
 
   return authors
 }
