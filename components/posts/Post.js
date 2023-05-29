@@ -5,6 +5,7 @@ import { marked } from 'marked'
 import { formatDate } from '../../utils/formatDate'
 import { getSocialIconComponent } from '../../utils/getSocialIconComponent'
 import siteConfig from '../../config/site.config.js';
+import { getAuthorLink } from '../../utils/link';
 
 export default function Post({post, postContent, authors}) {
   let pageUrl = `${siteConfig.baseURL.replace(/\/$|$/, '/')}posts/${post.slug}`
@@ -43,7 +44,7 @@ export default function Post({post, postContent, authors}) {
 
             {/* Author meta */}
             <div className="flex items-center mt-6 sm:mt-8">
-              <Link href={`/people/${post.author.replace(/ /g, '-').toLowerCase()}`}>
+              <Link href={getAuthorLink(post, authors)}>
                 <a className="flex-shrink-0 mr-3">
                   <div className="relative w-8 h-8 bg-gray-100 rounded-xl sm:w-9 sm:h-9">
                     {authors.map((author) =>
@@ -63,7 +64,7 @@ export default function Post({post, postContent, authors}) {
               </Link>
               <div className="text-sm lg:text-[15px] flex items-center">
                 <span className="hidden text-gray-500 sm:inline-block">By&nbsp;</span>
-                <Link href={`/people/${post.author.replace(/ /g, '-').toLowerCase()}`}>
+                <Link href={getAuthorLink(post, authors)}>
                   <a className="font-medium text-gray-700 hover:underline">
                     {post.author}
                   </a>
@@ -189,7 +190,7 @@ export default function Post({post, postContent, authors}) {
                       <div className="flex items-center justify-between">
                         <div className="'flex flex-col">
                           <p className="text-xs tracking-widest text-red-600 uppercase">
-                            {author.frontmatter.role}
+                            {author.frontmatter.title}
                           </p>
                           <h1 className="mt-1 text-xl font-medium tracking-normal text-gray-900 md:tracking-tight lg:leading-tight">
                             {author.frontmatter.name}
