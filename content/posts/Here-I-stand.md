@@ -10,7 +10,7 @@ category: "News"
 tags: [Oirats, Kalmyks, Captive Nations]
 group: "Featured"
 ---
-Martin Luther, the initiator of the Reformation in the Catholic religion, once said so. We, too, can say, “We stand here because we cannot do otherwise!”. Many other people would like to stand next to us, shoulder to shoulder with us, to say No to the Russian Empire. But the empire frightens people and fetters them with fear: for life, for property, for sources of funding.
+Martin Luther, the initiator of the Reformation in the Catholic religion, once said so. We, too, can say, “We stand here because we cannot do otherwise!”. Many other people would like to stand next to us, shoulder to shoulder, to say No to the Russian Empire. But the empire frightens people and fetters them with fear: for life, for property, for sources of funding.
 
 ###  Russia's war to seize Ukraine
 
@@ -20,14 +20,18 @@ Since February 24, 2022, so many innocent Ukrainians have died: civilians and so
 
 ### How did the Russian Empire appear?
 
-Until 1547, Moscow was small in territory and insignificant politically. It was called the Grand Duchy of Moscow. After the forcible annexation of Novgorod Republic in 1478 and the lands in the north, they named themselves as the Tsardom of Russia, and renamed  to the Empire in 1721. 
+Until 1547, Moscow was small in territory and insignificant politically. It was called the Grand Duchy of Moscow. After the forcible annexation of Novgorod Republic in 1478 and the lands in the north, it became known as the Tsardom of Russia. The Tsardom of Russia began to be called an empire in 1721, when Tsar Peter I assumed the title of Emperor of All Russia.
   
-In 1552, the troops of Ivan the Terrible took the capital city of the Kazan Khanate  and 4 years later the Astrakhan Khanate was conquered. So the Russian Empire has expanded its territories to the east until the river Idel, renamed into the Volga, and still called “the Great Russian River,” although 7 different nations (Chuvashs, Mari El, Tatars, Udmurts, Bashkirs, Kalmyks, Kazakhs)
-live on the banks of river.
+In 1552, the troops of Ivan the Terrible took the capital city of the Kazan Khanate  and 4 years later the Astrakhan Khanate was conquered. So the Russian Empire has expanded its territories to the east to Idel River, which they renamed into the Volga, and still call it “the Great Russian River”, although seven different nations live on the banks of the Idel: Chuvashs, Mari El, Tatars, Udmurts, Bashkorts, Oirat-Kalmyks, Kazakhs.
  
-In 17th-19th centuries, Siberia, the Far East, the North Caucasus and Central Asia were conquered.  Throughout history the empire led the conquest by fire and sword and enslavement of people.  
+In 17th-19th centuries, the territories of Siberia and the Far East, Central Asia and the North Caucasus were captured. Throughout history the empire led the conquest by fire and sword and enslavement of people.  
 
-All the people put up a desperate resistance. For example, the Russian-Buryat wars lasted for 137 years. The Bashkirs raised numerous rebellions for several centuries. The war of conquest of the North Caucasus was waged by the empire for more than 100 years. Only 3% of the population in Western Caucasus survived the war.
+All nations put up a fierce resistance. For example, the Russian-Buryat wars lasted for 137 years. The Bashkorts raised numerous uprisings for several centuries. The empire waged a war for the conquest of the North Caucasus for more than 100 years. Only 3% of the population of Circassians remained after the war.
+
+### How many non-Russians are in Russia?
+
+For politicians and the world community, Russia continues to be associated only with ethnic Russians, Orthodox Christians, and white Europeans. While about 40 million people live in 21 national republics with the status of subjects of the federation, and in 4 autonomous national districts. Among the peoples there are representatives of all world religions: Buddhists, Muslims, Christians. Their native languages are Turkic, Mongolian Finno-Ugric, and Caucasian. Each of the national republics has a head of the republic, a government consisting of ministries and departments, its own parliament, its own coat of arms, flag and anthem. The borders of the national republics are recognized by law. Thus, the republics have all the signs of statehood. But this is all on paper, de jure, but in fact de facto, all national republics are colonies. Under Article 1 of the UN Charter, colonized peoples have the right to self-determination.
+The territories of the republics and autonomous regions make up 75% of the total area of the Russian Empire, where more than 80% of natural resources are extracted. That is why the colonies are beneficial to Moscow, but is Moscow beneficial to the colonies?
 
 ### The collapse of the empire does not begin these days, it ends! Why?
 
@@ -43,7 +47,7 @@ If the national republics and regions of Russia exercise their right to sovereig
 
 ### So far, most Western politicians are still guided by the opinion of the Russian opposition elite, under the leadership of Khodorkovsky and Kasparov, as well as Navalny.
 
-It is better to call this opposition elite the Moscow one, since it represents the interests of an exclusively privileged layer of the capital, prospering at the expense of the national republics and regions. The Moscow opposition elite is trying to promote its vision of a United, Indivisible Russia with Nuclear Weapons at the political and public levels. This position is 100% consistent with the desire of Putin and the Kremlin. Another common point, the Moscow opposition "sees no flaws in the Kremlin's national policy. This means that both Putin and Khodorkovsky want to preserve the Empire.
+It is better to call this opposition elite the Moscow one, since it represents the interests of an exclusively privileged layer of the capital, prospering at the expense of the national republics and regions. The Moscow opposition elite is trying to promote its vision of a United, Indivisible Russia with Nuclear Weapons at the political and public levels. This position is 100% consistent with the desire of Putin and the Kremlin. Another common point, the Moscow opposition "sees no flaws in the Kremlin's national policy". This means that both Putin and Khodorkovsky want to preserve the Empire and continue to steal the resources of the colonies in order to obtain fabulous profits.
 
 ### Just like Putin, the Moscow opposition elite in the person of Khodorkovsky and the Navalny Foundation frighten the whole world saying that the collapse of Russia will lead to bloodshed and violence.
 
