@@ -51,7 +51,7 @@ It is better to call this opposition elite the Moscow one, since it represents t
 
 ### Just like Putin, the Moscow opposition elite in the person of Khodorkovsky and the Navalny Foundation frighten the whole world saying that the collapse of Russia will lead to bloodshed and violence.
 
-But at the same time they do not realize, In fact, the worst has already happened. What could happen worse than a war in Ukraine? What could be worse than what happened in Bucha, Irpen and Kramatorsk? What could be worse than the torture and burning of soldiers in Olenivka? What could be worse than a nuclear threat to the whole world coming from a single indivisible Russia?
+But at the same time they do not realize, in fact, the worst has already happened. What could happen worse than a war in Ukraine? What could be worse than what happened in Bucha, Irpen and Kramatorsk? What could be worse than the torture and burning of soldiers in Olenivka? What could be worse than a nuclear threat to the whole world coming from a single indivisible Russia?
 
 No Russian Empire! Glory to Ukraine!
 
