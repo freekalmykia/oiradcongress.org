@@ -55,4 +55,4 @@ But at the same time they do not realize, in fact, the worst has already happene
 
 No Russian Empire! Glory to Ukraine!
 
-Alga, Uralan, free peoples of Adygea, Altai Republic, Bashkortostan, Buryatia, Dagestan, Ingushetia, Kabardino-Balkaria, Oirat-Kalmykia, Karachay-Cherkessia, Karelia, Komi Republic, Mari El, Mordovia, Sakha (Yakutia), North Ossetia - Alania, Tatarstan, Tuva, Udmurtia, Khakassia, Ichkeria, Chuvashia - Bulgaria.
+***Alga, Uralan***, free peoples of Adygea, Altai Republic, Bashkortostan, Buryatia, Dagestan, Ingushetia, Kabardino-Balkaria, Oirat-Kalmykia, Karachay-Cherkessia, Karelia, Komi Republic, Mari El, Mordovia, Sakha (Yakutia), North Ossetia - Alania, Tatarstan, Tuva, Udmurtia, Khakassia, Ichkeria, Chuvashia - Bulgaria.
