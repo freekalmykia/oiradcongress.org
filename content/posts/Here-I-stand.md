@@ -6,7 +6,7 @@ date: "2023-05-31T16:56:47+06:00"
 author: "Maria Ochir"
 time_to_read_in_minutes: 7
 views: 105
-category: "News"
+category: "Opinions"
 tags: [Oirats, Kalmyks, Captive Nations]
 group: "Featured"
 ---
