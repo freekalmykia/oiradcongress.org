@@ -61,5 +61,5 @@ mail_info:
     postal_code: "49548"
   additional_info: >-
       Lorem ipsum dolor sit amet ornare arcu bibendum nunc. Phasellus praesent nisi malesuada imperdiet ac velit massa velit lacus hendrerit etiam nec.
-  email_text: Send us email at oiradcongress@gmail.com
+  email_text: Send us email at oirat.kalmyk.congress@gmail.com
 ---
