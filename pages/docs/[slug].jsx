@@ -20,7 +20,7 @@ export default function DocPage({
     <Layout 
       metaTitle={doc.title} 
       metaDescription={doc.description} 
-      ogImage={`https://oiradcongress.org${doc.image}`}
+      ogImage={`https://oiratcongress.org${doc.image}`}
     >
       <Doc doc={doc} docContent={content} />
       <NextDoc doc={nextDoc} />
