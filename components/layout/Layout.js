@@ -43,7 +43,7 @@ export default function Layout({
       </Head>
 
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-DFXDZW6B75"
+        src="https://www.googletagmanager.com/gtag/js?id=G-TGZE905KJF"
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -52,7 +52,7 @@ export default function Layout({
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-DFXDZW6B75');
+          gtag('config', 'G-TGZE905KJF');
         `}
       </Script>
 
