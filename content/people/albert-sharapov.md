@@ -3,7 +3,7 @@ name: "Albert Sharapov"
 image: "/images/people/albert.jpg"
 role: "member"
 title: "Member"
-order: 6
+order: 12
 social_links:
   - name: "twitter"
     url: "https://twitter.com/AlSharp85"
