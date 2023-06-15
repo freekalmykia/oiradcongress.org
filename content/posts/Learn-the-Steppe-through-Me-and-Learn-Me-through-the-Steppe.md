@@ -8,7 +8,7 @@ time_to_read_in_minutes: 5
 views: 122
 category: "Culture"
 tags: [Oirats, Kalmyks, Steppe]
-group: "Featured"
+group: "Archived"
 ---
 The steppes of our Kalmyk Republic occupy the right bank of the Volga River downstream to the banks of the Manych and Kuma, which separate the Volga’s right bank from the Stavropol uplands. The territory is not insignificant - 75.9 thousand square km.  It is almost twice as much as the territory of Denmark or Holland and a little less than Austria.  On the territory of Kalmykia there are three geographic landscape zones - the Yergenini highlands, the Kumo-Manych depression and the Caspian lowlands. 
  

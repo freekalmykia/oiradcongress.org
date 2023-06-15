@@ -7,8 +7,8 @@ import { getSocialIconComponent } from '../../utils/getSocialIconComponent'
 import siteConfig from '../../config/site.config.js';
 import { getAuthorLink } from '../../utils/link';
 
-export default function Post({post, postContent, authors}) {
-  let pageUrl = `${siteConfig.baseURL.replace(/\/$|$/, '/')}posts/${post.slug}`
+export default function Post({slug, post, postContent, authors}) {
+  let pageUrl = `${siteConfig.baseURL.replace(/\/$|$/, '/')}posts/${slug}`
   
   return (
     <article className="pb-12 sm:pb-16 lg:pb-24 bg-gray-50">

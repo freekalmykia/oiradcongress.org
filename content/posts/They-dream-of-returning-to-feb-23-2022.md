@@ -8,7 +8,7 @@ time_to_read_in_minutes: 7
 views: 159
 category: "Opinions"
 tags: [Oirats, Kalmyks, Captive Nations, Independence]
-group: "Featured"
+group: "Archived"
 ---
 
 Hello Dear Readers! 
