@@ -8,7 +8,7 @@ time_to_read_in_minutes: 2
 views: 67
 category: "History"
 tags: [Oirats, Kalmyks, migration]
-group: "Featured"
+group: "Archived"
 ---
 There have been a number of nomadic peoples in the recent past in the vast expanses of Eurasia - Kazakhs, Buryats, Tuvans, Altaians and some Bashkirs. The Kalmyks are one of them. However, Kalmyks are the only nomads that in historically documented times have made two trans-continental migrations: in the beginning of XVII century from Central Asia (Western Mongolia) to Eastern Europe (the shores of river Volga), where they founded their khanate, and at the end of XVIII century from the banks of the Volga back to their historic homeland of Western Mongolia. The Kalmyks thus repeated the traditional migration route for nomads (Scythians, Sarmatians, Huns and Tatar-Mongols) of previous eras (Early Iron Age and Middle Ages).
 

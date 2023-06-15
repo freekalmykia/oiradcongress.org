@@ -18,13 +18,14 @@ export default function PostPage({
   nextArticle,
   newsletter
 }) {
+  console.log('slug: ', slug);
   return (
     <Layout 
       metaTitle={post.title} 
       metaDescription={post.description} 
       ogImage={`https://oiratcongress.org${post.image}`}
     >
-      <Post post={post} postContent={content} authors={authors} />
+      <Post slug={slug} post={post} postContent={content} authors={authors} />
       <NextArticle post={nextArticle} />
       <Newsletter newsletter={newsletter} />
     </Layout>
