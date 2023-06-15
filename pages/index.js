@@ -61,7 +61,7 @@ export default function Home({
 
           {/* Sidebar */}
           <div className="w-full mt-12 space-y-8 sm:mt-16 lg:mt-0 lg:col-span-1">
-            <SidebarAd />
+            {/* <SidebarAd /> */}
             <SidebarArticles posts={popularPosts} header="Most read" />
           </div>
 

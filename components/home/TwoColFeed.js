@@ -7,7 +7,7 @@ export default function TwoColFeed({posts, authors}) {
     <div className="col-span-2">
       
       {/* Advertisement Banner */}
-      <a href="#" className="relative block w-full max-w-xl px-4 mx-auto rounded-2xl sm:px-6 md:px-8 lg:px-0 md:max-w-3xl lg:max-w-none bg-gray-50">
+      {/* <a href="#" className="relative block w-full max-w-xl px-4 mx-auto rounded-2xl sm:px-6 md:px-8 lg:px-0 md:max-w-3xl lg:max-w-none bg-gray-50">
         <Image 
           className="object-cover w-full h-auto rounded-2xl" 
           src="/images/ads/banner.jpeg" 
@@ -16,7 +16,7 @@ export default function TwoColFeed({posts, authors}) {
           height={240}
           layout="responsive"
         />
-      </a>
+      </a> */}
       
       {/* Articles */}
       <div className="grid max-w-xl gap-6 px-4 mx-auto mt-8 sm:px-6 md:px-8 lg:px-0 md:max-w-3xl lg:max-w-none md:grid-cols-2">
