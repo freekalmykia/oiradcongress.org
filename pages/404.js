@@ -40,11 +40,11 @@ export default function Custom404({featuredPosts, authors}) {
   )
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   return {
     props: {
-      authors: getAuthors(),
-      featuredPosts: getFeaturedPosts().slice(0,4)
+      authors: getAuthors(locale),
+      featuredPosts: getFeaturedPosts(locale).slice(0,4)
     }
   }
 }

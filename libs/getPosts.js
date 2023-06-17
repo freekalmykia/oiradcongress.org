@@ -2,55 +2,55 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 import { sortByDate, sortByViews } from "../utils/sort"
+import { withLocale } from "../utils/locale"
 
-export function getPosts() {
-  const postFiles = fs.readdirSync(path.join("content/posts"))
-
-  const posts = postFiles.map((filename) => {
-    const slug = filename.replace(".md", "")
-    const postContents = fs.readFileSync(
-      path.join("content/posts", filename),
-      "utf8"
-    )
-
-    const { data: frontmatter, content } = matter(postContents)
-
-    return {
-      slug,
-      frontmatter,
-      content,
-    }
-  })
+export function getPosts(locale) {
+  const posts = fs.readdirSync(path.join("content/posts", locale))
+    .map(post => {
+      const slug = post.replace('.md', '')
+      const postContents = fs.readFileSync(
+        withLocale(path.join("content/posts"), locale, slug),
+        "utf8"
+      )
+  
+      const { data: frontmatter, content } = matter(postContents)
+  
+      return {
+        slug,
+        frontmatter,
+        content,
+      }
+    })
 
   return posts
 }
 
-export function getFeaturedPosts() {
-  const posts = getPosts()
+export function getFeaturedPosts(locale) {
+  const posts = getPosts(locale)
   
   const FeaturedPosts = posts.filter((post) => post.frontmatter.group == "Featured")
 
   return FeaturedPosts.sort(sortByDate)
 }
 
-export function getArchivedPosts() {
-  const posts = getPosts()
+export function getArchivedPosts(locale) {
+  const posts = getPosts(locale)
   
   const archivedPosts = posts.filter((post) => post.frontmatter.group == "Archived")
 
   return archivedPosts.sort(sortByDate)
 }
 
-export function getPopularPosts() {
-  const posts = getPosts()
+export function getPopularPosts(locale) {
+  const posts = getPosts(locale)
   
   const archivedPosts = posts.filter((post) => post.frontmatter.group == "Archived")
 
   return archivedPosts.sort(sortByViews).slice(0,6)
 }
 
-export function getPostsInCategory(category) {
-  const posts = getPosts()
+export function getPostsInCategory(category, locale) {
+  const posts = getPosts(locale)
 
   const postsInSameCategory = posts.filter((post) => {
     return post.frontmatter.category == category
@@ -59,13 +59,13 @@ export function getPostsInCategory(category) {
   return postsInSameCategory.sort(sortByDate)
 }
 
-export function getPopularPostsInCategory(category) {
-  let posts = getPostsInCategory(category)
+export function getPopularPostsInCategory(category, locale) {
+  let posts = getPostsInCategory(category, locale)
   return posts.sort(sortByViews).slice(0,4)
 }
 
-export function getPostsFromAuthor(author) {
-  const posts = getPosts()
+export function getPostsFromAuthor(author, locale) {
+  const posts = getPosts(locale)
 
   const postsFromAuthor = posts.filter((post) => {
     return post.frontmatter.author == author
@@ -74,13 +74,13 @@ export function getPostsFromAuthor(author) {
   return postsFromAuthor.sort(sortByDate)
 }
 
-export function getPopularPostsFromAuthor(author) {
-  let posts = getPostsFromAuthor(author)
+export function getPopularPostsFromAuthor(author, locale) {
+  let posts = getPostsFromAuthor(author, locale)
   return posts.sort(sortByViews).slice(0,4)
 }
 
-export function getNextArticle(post) {
-  const posts = getPosts()
+export function getNextArticle(post, locale) {
+  const posts = getPosts(locale)
 
   const postsInSameCategory = posts.filter((p) => {
     return p.slug != post.slug && p.frontmatter.category == post.frontmatter.category
@@ -95,8 +95,8 @@ export function getNextArticle(post) {
   }
 }
 
-export function getPostsWithTag(tagSlug) {
-  const posts = getPosts()
+export function getPostsWithTag(tagSlug, locale) {
+  const posts = getPosts(locale)
   
   const postsWithTag = posts.filter((post) => {
     return post.frontmatter.tags.some((tag) => {

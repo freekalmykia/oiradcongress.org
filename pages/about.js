@@ -29,11 +29,12 @@ export default function About({about, authors, members, newsletter}) {
   )
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
+  console.log('locale: ', locale);
   return {
     props: {
-      authors: getAuthors(),
-      members: getMembers(),
+      authors: getAuthors(locale),
+      members: getMembers(locale),
       about: getContentPage('content/pages/about.md'),
       newsletter: getContentPage('content/shared/newsletter.md')
     },

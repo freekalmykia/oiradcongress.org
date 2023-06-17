@@ -14,6 +14,7 @@ import Pagination from '../../components/shared/Pagination'
 import { getContentPage } from '../../libs/getContentPage'
 import { getPostsFromAuthor, getPopularPostsFromAuthor } from '../../libs/getPosts'
 import { getAuthors } from '../../libs/getAuthors'
+import { withLocale } from '../../utils/locale'
 
 export default function AuthorPage({
   author,
@@ -57,14 +58,17 @@ export default function AuthorPage({
   )
 }
 
-export async function getStaticPaths() {
-  const authorFiles = fs.readdirSync(path.join('content/people'))
+export async function getStaticPaths({ locales }) {
 
-  const paths = authorFiles.map((filename) => ({
-    params: {
-      slug: filename.replace('.md', ''),
-    },
-  }))
+  const paths = locales.map(locale => {
+    const authorFiles = fs.readdirSync(path.join('content/people', locale))
+    return authorFiles.map((filename) => ({
+      params: {
+        slug: filename.replace('.md', ''),
+      },
+      locale
+    }))
+  }).flat()
 
   return {
     paths,
@@ -72,9 +76,9 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params: { slug } }) {
+export async function getStaticProps({ locale, params: { slug } }) {
   const fileContents = fs.readFileSync(
-    path.join('content/people', slug + '.md'),
+    withLocale(path.join('content/people'), locale, slug),
     'utf8'
   )
 
@@ -90,10 +94,10 @@ export async function getStaticProps({ params: { slug } }) {
   return {
     props: {
       author,
-      authors: getAuthors(),
+      authors: getAuthors(locale),
       newsletter: getContentPage('content/shared/newsletter.md'),
-      popularPosts: getPopularPostsFromAuthor(author.frontmatter.name),
-      posts: getPostsFromAuthor(author.frontmatter.name)
+      popularPosts: getPopularPostsFromAuthor(author.frontmatter.name, locale),
+      posts: getPostsFromAuthor(author.frontmatter.name, locale)
     },
   };
 }

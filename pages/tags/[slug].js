@@ -42,7 +42,7 @@ export default function TagPage({
           <div className="w-full mt-12 space-y-8 sm:mt-16 lg:mt-0 lg:col-span-1">
             <SidebarSocialLinks />
             <SidebarArticles posts={popularPosts} header="Most read articles" />
-            <SidebarAd />
+            {/* <SidebarAd /> */}
           </div>
 
         </div>
@@ -53,14 +53,18 @@ export default function TagPage({
   )
 }
 
-export async function getStaticPaths() {
-  const tags = getTags()
+export async function getStaticPaths({ locales }) {
 
-  const paths = tags.map((tag) => ({
-    params: {
-      slug: tag.toString().replace(/ /g, '-').toLowerCase(),
-    },
-  }))
+  const paths = locales.map(locale => {
+    const tags = getTags(locale)
+
+    return tags.map((tag) => ({
+      params: {
+        slug: tag.toString().replace(/ /g, '-').toLowerCase(),
+      },
+      locale
+    }))
+  }).flat()
 
   return {
     paths,
@@ -68,7 +72,7 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params: { slug } }) {
+export async function getStaticProps({ locale, params: { slug } }) {
   const tag = slug
                 .charAt(0)
                 .toUpperCase() + slug.slice(1).replace(/-/g, ' ')
@@ -76,10 +80,10 @@ export async function getStaticProps({ params: { slug } }) {
   return {
     props: {
       tag,
-      authors: getAuthors(),
+      authors: getAuthors(locale),
       newsletter: getContentPage('content/shared/newsletter.md'),
-      popularPosts: getPopularPosts().slice(0,4),
-      posts: getPostsWithTag(slug)
+      popularPosts: getPopularPosts(locale).slice(0,4),
+      posts: getPostsWithTag(slug, locale)
     },
   }
 }

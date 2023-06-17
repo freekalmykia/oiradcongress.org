@@ -8,6 +8,7 @@ import Doc from '../../components/docs/Doc'
 import NextDoc from '../../components/docs/NextDoc'
 import Newsletter from '../../components/shared/Newsletter'
 import { getContentPage } from '../../libs/getContentPage'
+import { withLocale } from '../../utils/locale'
 
 export default function DocPage({
   slug,
@@ -29,14 +30,17 @@ export default function DocPage({
   )
 }
 
-export async function getStaticPaths() {
-  const docFiles = fs.readdirSync(path.join('content/docs'))
+export async function getStaticPaths({ locales }) {
 
-  const paths = docFiles.map((filename) => ({
-    params: {
-      slug: filename.replace('.md', ''),
-    },
-  }))
+  const paths = locales.map(locale => {
+    const docFiles = fs.readdirSync(path.join('content/docs', locale))
+    return docFiles.map((filename) => ({
+      params: {
+        slug: filename.replace('.md', ''),
+      },
+      locale
+    }))
+  }).flat()
 
   return {
     paths,
@@ -44,14 +48,14 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params: { slug } }) {
+export async function getStaticProps({ locale, params: { slug } }) {
   const fileContents = fs.readFileSync(
-    path.join('content/docs', slug + '.md'),
+    withLocale(path.join('content/docs'), locale, slug),
     'utf8'
   )
 
   const { data: frontmatter, content } = matter(fileContents)
-  const nextDoc = getNextDoc({frontmatter, slug})
+  const nextDoc = getNextDoc(locale)
   
   return {
     props: {
