@@ -44,12 +44,12 @@ export default function About({privacy, newsletter, instagramFeed, popularPosts}
   )
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   return {
     props: {
       privacy: getContentPage('content/pages/privacy.md'),
       instagramFeed: getInstagramFeed(),
-      popularPosts: getPopularPosts().slice(0,4),
+      popularPosts: getPopularPosts(locale).slice(0,4),
       newsletter: getContentPage('content/shared/newsletter.md')
     },
   }

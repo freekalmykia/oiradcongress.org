@@ -1,13 +1,14 @@
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
+import { withLocale } from "../utils/locale"
 
-export function getTags() {
-  const postFiles = fs.readdirSync(path.join("content/posts"))
+export function getTags(locale) {
+  const fileNames = fs.readdirSync(path.join("content/posts", locale))
 
-  const allPostTags = postFiles.map((filename) => {
+  const allPostTags = fileNames.map(fileName => {
     const postContents = fs.readFileSync(
-      path.join("content/posts", filename),
+      withLocale(path.join("content/posts"), locale, fileName.replace('.md', '')),
       "utf8"
     )
 

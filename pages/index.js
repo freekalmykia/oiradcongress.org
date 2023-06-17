@@ -73,16 +73,16 @@ export default function Home({
   )
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   return {
     props: {
-      authors: getAuthors(),
-      featuredPosts: getFeaturedPosts(),
-      categories: getCategories(),
-      tags: getTags(),
+      authors: getAuthors(locale),
+      featuredPosts: getFeaturedPosts(locale),
+      categories: getCategories(locale),
+      tags: getTags(locale),
       instagramFeed: getInstagramFeed(),
-      popularPosts: getPopularPosts(),
-      archivedPosts: getArchivedPosts(),
+      popularPosts: getPopularPosts(locale),
+      archivedPosts: getArchivedPosts(locale),
       newsletter: getContentPage('content/shared/newsletter.md')
     }
   }

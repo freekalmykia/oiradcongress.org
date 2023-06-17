@@ -9,6 +9,14 @@ import { ChevronDownIcon, SearchIcon } from '@heroicons/react/solid'
 
 export default function Navbar() {
   const router = useRouter();
+  const { locale } = router;
+
+  const changeLocale = locale => {
+    router.push({
+      route: router.pathname,
+      query: router.query
+    }, router.asPath, { locale })
+  }
 
   return (
     <Disclosure as="header" className="relative bg-transparent border-b border-gray-300/60">
@@ -48,51 +56,67 @@ export default function Navbar() {
               </div>
 
               {/* Navigation for large screens */}
-              <div className="ml-6 hidden md:flex justify-between items-center md:space-x-0.5 lg:space-x-2 text-xl md:text-base">
+              <div className="flex flex-col">
+                <div className="flex justify-end mr-4 mb-2">
+                  <div
+                    className={`px-2 py-1 mr-3 bg-gray-100 ${locale === 'en' ? 'bg-red-400' : ''} hover:cursor-pointer`}
+                    onClick={() => changeLocale('en')}
+                  >
+                    EN
+                  </div>
+                  <div
+                    className={`px-2 py-1 bg-gray-100 ${locale === 'ru' ? 'bg-red-400' : ''} hover:cursor-pointer`}
+                    onClick={() => changeLocale('ru')}
+                  >
+                    RU
+                  </div>
+                </div>
+                <div className="ml-6 hidden md:flex justify-between items-center md:space-x-0.5 lg:space-x-2 text-xl md:text-base">
 
-                {menuLinks.mainMenu.map((link, index) =>
-                  link.submenu ? (
-                    <Menu as="div" className="relative" key={index}>
-                      {({ open }) => (
-                        <>
-                          <Menu.Button
-                            className={`flex items-center px-3 py-1 font-medium text-md group ${open ? 'text-red-700' : 'text-gray-800 hover:text-red-700 transition duration-300 ease-in-out'}`}
-                          >
-                            <span>{link.name}</span>
-                            <ChevronDownIcon
-                              className={`w-5 h-5 ml-2 transform duration-300 ${open ? 'rotate-180 text-red-700' : 'text-gray-600 group-hover:text-red-700'}`}
-                              aria-hidden="true"
-                            />
-                          </Menu.Button>
-                          
-                          
-                          <Menu.Items className="z-20 mt-3 absolute w-52 right-0 rounded-xl bg-white filter drop-shadow p-2.5 space-y-1">
-                            {link.submenu.map((subLink, i) => (
-                              <Menu.Item key={i}>
-                                <Link href={subLink.link}>
-                                  <a 
-                                    className={`block rounded-lg py-3.5 px-5 font-medium ${router.pathname == subLink.link ? 'bg-gray-50 text-red-700' : 'text-gray-800 hover:bg-gray-50 hover:text-red-700 transition duration-300 ease-in-out'}`}
-                                  >
-                                    {subLink.name}
-                                  </a>
-                                </Link>
-                              </Menu.Item>
-                            ))}
-                          </Menu.Items>
-                          
-                        </>
-                      )}
-                    </Menu>
-                    
-                  ) : (
-                    <Link key={index} href={link.link}>
-                      <a className={`px-3 py-1 font-medium text-md ${router.pathname == link.link ? 'text-red-700' : 'text-gray-800 transition duration-300 ease-in-out hover:text-red-700'}`}>
-                        {link.name}
-                      </a>
-                    </Link>
-                  )
-                )}
+                  {menuLinks.mainMenu.map((link, index) =>
+                    link.submenu ? (
+                      <Menu as="div" className="relative" key={index}>
+                        {({ open }) => (
+                          <>
+                            <Menu.Button
+                              className={`flex items-center px-3 py-1 font-medium text-md group ${open ? 'text-red-700' : 'text-gray-800 hover:text-red-700 transition duration-300 ease-in-out'}`}
+                            >
+                              <span>{link.name}</span>
+                              <ChevronDownIcon
+                                className={`w-5 h-5 ml-2 transform duration-300 ${open ? 'rotate-180 text-red-700' : 'text-gray-600 group-hover:text-red-700'}`}
+                                aria-hidden="true"
+                              />
+                            </Menu.Button>
+                            
+                            
+                            <Menu.Items className="z-20 mt-3 absolute w-52 right-0 rounded-xl bg-white filter drop-shadow p-2.5 space-y-1">
+                              {link.submenu.map((subLink, i) => (
+                                <Menu.Item key={i}>
+                                  <Link href={subLink.link}>
+                                    <a 
+                                      className={`block rounded-lg py-3.5 px-5 font-medium ${router.pathname == subLink.link ? 'bg-gray-50 text-red-700' : 'text-gray-800 hover:bg-gray-50 hover:text-red-700 transition duration-300 ease-in-out'}`}
+                                    >
+                                      {subLink.name}
+                                    </a>
+                                  </Link>
+                                </Menu.Item>
+                              ))}
+                            </Menu.Items>
+                            
+                          </>
+                        )}
+                      </Menu>
+                      
+                    ) : (
+                      <Link key={index} href={link.link}>
+                        <a className={`px-3 py-1 font-medium text-md ${router.pathname == link.link ? 'text-red-700' : 'text-gray-800 transition duration-300 ease-in-out hover:text-red-700'}`}>
+                          {link.name}
+                        </a>
+                      </Link>
+                    )
+                  )}
 
+                </div>
               </div>
 
               {/* Search */}

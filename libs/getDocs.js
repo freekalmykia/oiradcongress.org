@@ -2,28 +2,28 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { sortByDate } from '../utils/sort';
+import { withLocale } from '../utils/locale';
 
-export function getDocs() {
-  const docFiles = fs.readdirSync(path.join('content/docs'));
+export function getDocs(locale) {
+  const docs = fs.readdirSync(path.join('content/docs', locale))
+    .map((filename) => {
+      const slug = filename.replace('.md', '');
+      const docContents = fs.readFileSync(withLocale(path.join('content/docs'), locale, slug), 'utf8');
 
-  const docs = docFiles.map((filename) => {
-    const slug = filename.replace('.md', '');
-    const docContents = fs.readFileSync(path.join('content/docs', filename), 'utf8');
+      const { data: frontmatter, content } = matter(docContents);
 
-    const { data: frontmatter, content } = matter(docContents);
-
-    return {
-      slug,
-      frontmatter,
-      content
-    }
-  });
+      return {
+        slug,
+        frontmatter,
+        content
+      }
+    });
 
   return docs;
 }
 
-export function getNextDoc(post) {
-  const docs = getDocs();
+export function getNextDoc(locale) {
+  const docs = getDocs(locale);
 
   if (!docs.length) return null;
 

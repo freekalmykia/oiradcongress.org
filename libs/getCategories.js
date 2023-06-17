@@ -2,12 +2,12 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 
-export function getCategories() {
-  const categoryFiles = fs.readdirSync(path.join("content/categories"))
+export function getCategories(locale) {
+  const categoryFiles = fs.readdirSync(path.join("content/categories", locale))
   const categories = categoryFiles.map((filename) => {
     const slug = filename.replace(".md", "")
     const categoryContents = fs.readFileSync(
-      path.join("content/categories", filename),
+      path.join("content/categories", locale, filename),
       "utf8"
     )
 

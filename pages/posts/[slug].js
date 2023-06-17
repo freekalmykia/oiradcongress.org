@@ -9,6 +9,7 @@ import Post from '../../components/posts/Post'
 import NextArticle from '../../components/posts/NextArticle'
 import Newsletter from '../../components/shared/Newsletter'
 import { getContentPage } from '../../libs/getContentPage'
+import { withLocale } from '../../utils/locale'
 
 export default function PostPage({
   slug,
@@ -18,7 +19,6 @@ export default function PostPage({
   nextArticle,
   newsletter
 }) {
-  console.log('slug: ', slug);
   return (
     <Layout 
       metaTitle={post.title} 
@@ -32,14 +32,14 @@ export default function PostPage({
   )
 }
 
-export async function getStaticPaths() {
-  const postFiles = fs.readdirSync(path.join('content/posts'))
-
-  const paths = postFiles.map((filename) => ({
-    params: {
-      slug: filename.replace('.md', ''),
-    },
-  }))
+export async function getStaticPaths({ locales }) {
+  const paths = locales.map(locale => {
+    const fileNames = fs.readdirSync(path.join('content/posts', locale));
+    return fileNames.map(fileName => ({
+      params: { slug: fileName.replace('.md', '') },
+      locale
+    }))
+  }).flat()
 
   return {
     paths,
@@ -47,21 +47,22 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params: { slug } }) {
+export async function getStaticProps({ locale, params: { slug } }) {
+  
   const fileContents = fs.readFileSync(
-    path.join('content/posts', slug + '.md'),
+    withLocale(path.join('content/posts'), locale, slug),
     'utf8'
   )
 
   const { data: frontmatter, content } = matter(fileContents)
-  const nextArticle = getNextArticle({frontmatter, slug})
+  const nextArticle = getNextArticle({frontmatter, slug}, locale)
   
   return {
     props: {
       slug,
       frontmatter,
       content,
-      authors: getAuthors(),
+      authors: getAuthors(locale),
       nextArticle,
       newsletter: getContentPage('content/shared/newsletter.md')
     },

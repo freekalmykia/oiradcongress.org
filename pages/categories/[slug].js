@@ -39,7 +39,7 @@ export default function CategoryPage({
           <div className="w-full mt-12 space-y-8 sm:mt-16 lg:mt-0 lg:col-span-1">
             <SidebarArticles posts={popularPosts} header={`Most read in ${category.name}`} />
             <SidebarSocialLinks />
-            <SidebarAd />
+            {/* <SidebarAd /> */}
           </div>
 
         </div>
@@ -68,14 +68,18 @@ export default function CategoryPage({
   )
 }
 
-export async function getStaticPaths() {
-  const categoryFiles = fs.readdirSync(path.join('content/categories'))
+export async function getStaticPaths({ locales }) {
 
-  const paths = categoryFiles.map((filename) => ({
-    params: {
-      slug: filename.replace('.md', ''),
-    },
-  }))
+  const paths = locales.map(locale => {
+    const categoryFiles = fs.readdirSync(path.join('content/categories', locale))
+
+    return categoryFiles.map((filename) => ({
+      params: {
+        slug: filename.replace('.md', ''),
+      },
+      locale
+    }))
+  }).flat()
 
   return {
     paths,
@@ -83,9 +87,9 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params: { slug } }) {
+export async function getStaticProps({ locale, params: { slug } }) {
   const fileContents = fs.readFileSync(
-    path.join('content/categories', slug + '.md'),
+    path.join('content/categories', locale, slug + '.md'),
     'utf8'
   )
 
@@ -95,10 +99,10 @@ export async function getStaticProps({ params: { slug } }) {
     props: {
       slug,
       frontmatter,
-      authors: getAuthors(),
+      authors: getAuthors(locale),
       newsletter: getContentPage('content/shared/newsletter.md'),
-      popularPosts: getPopularPostsInCategory(frontmatter.name),
-      posts: getPostsInCategory(frontmatter.name)
+      popularPosts: getPopularPostsInCategory(frontmatter.name, locale),
+      posts: getPostsInCategory(frontmatter.name, locale)
     },
   };
 }
