@@ -22,7 +22,7 @@ export default function Navbar() {
     <Disclosure as="header" className="relative bg-transparent border-b border-gray-300/60">
       {({ open }) => (
         <>
-          <nav className="flex items-center h-24 lg:h-32 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <nav className="flex flex-col xs:flex-row items-center xs:h-24 lg:h-32 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 py-5">
             
             {/* Main navbar for large screens */}
             <div className="flex h-14 lg:h-[72px] items-center justify-between w-full">
@@ -56,95 +56,110 @@ export default function Navbar() {
               </div>
 
               {/* Navigation for large screens */}
-              <div className="flex flex-col">
-                <div className="flex justify-end mr-4 mb-2">
-                  <div
-                    className={`px-2 py-1 mr-3 bg-gray-100 ${locale === 'en' ? 'bg-red-400' : ''} hover:cursor-pointer`}
-                    onClick={() => changeLocale('en')}
-                  >
-                    EN
+              <div className="flex items-center">
+                <div className="xs:flex sm:flex-col hidden">
+                  <div className="flex justify-end mr-4 lg:mb-2">
+                    <div
+                      className={`px-2 lg:py-1 mr-3 bg-gray-100 ${locale === 'en' ? 'bg-red-400' : ''} hover:cursor-pointer`}
+                      onClick={() => changeLocale('en')}
+                    >
+                      EN
+                    </div>
+                    <div
+                      className={`px-2 lg:py-1 bg-gray-100 ${locale === 'ru' ? 'bg-red-400' : ''} hover:cursor-pointer`}
+                      onClick={() => changeLocale('ru')}
+                    >
+                      RU
+                    </div>
                   </div>
-                  <div
-                    className={`px-2 py-1 bg-gray-100 ${locale === 'ru' ? 'bg-red-400' : ''} hover:cursor-pointer`}
-                    onClick={() => changeLocale('ru')}
-                  >
-                    RU
+                  <div className="ml-6 hidden md:flex justify-between items-center md:space-x-0.5 lg:space-x-2 text-xl md:text-base">
+
+                    {menuLinks.mainMenu.map((link, index) =>
+                      link.submenu ? (
+                        <Menu as="div" className="relative" key={index}>
+                          {({ open }) => (
+                            <>
+                              <Menu.Button
+                                className={`flex items-center px-3 py-1 font-medium text-md group ${open ? 'text-red-700' : 'text-gray-800 hover:text-red-700 transition duration-300 ease-in-out'}`}
+                              >
+                                <span>{link.name}</span>
+                                <ChevronDownIcon
+                                  className={`w-5 h-5 ml-2 transform duration-300 ${open ? 'rotate-180 text-red-700' : 'text-gray-600 group-hover:text-red-700'}`}
+                                  aria-hidden="true"
+                                />
+                              </Menu.Button>
+                              
+                              
+                              <Menu.Items className="z-20 mt-3 absolute w-52 right-0 rounded-xl bg-white filter drop-shadow p-2.5 space-y-1">
+                                {link.submenu.map((subLink, i) => (
+                                  <Menu.Item key={i}>
+                                    <Link href={subLink.link}>
+                                      <a 
+                                        className={`block rounded-lg py-3.5 px-5 font-medium ${router.pathname == subLink.link ? 'bg-gray-50 text-red-700' : 'text-gray-800 hover:bg-gray-50 hover:text-red-700 transition duration-300 ease-in-out'}`}
+                                      >
+                                        {subLink.name}
+                                      </a>
+                                    </Link>
+                                  </Menu.Item>
+                                ))}
+                              </Menu.Items>
+                              
+                            </>
+                          )}
+                        </Menu>
+                        
+                      ) : (
+                        <Link key={index} href={link.link}>
+                          <a className={`px-3 py-1 font-medium text-md ${router.pathname == link.link ? 'text-red-700' : 'text-gray-800 transition duration-300 ease-in-out hover:text-red-700'}`}>
+                            {link.name}
+                          </a>
+                        </Link>
+                      )
+                    )}
+
                   </div>
                 </div>
-                <div className="ml-6 hidden md:flex justify-between items-center md:space-x-0.5 lg:space-x-2 text-xl md:text-base">
 
-                  {menuLinks.mainMenu.map((link, index) =>
-                    link.submenu ? (
-                      <Menu as="div" className="relative" key={index}>
-                        {({ open }) => (
-                          <>
-                            <Menu.Button
-                              className={`flex items-center px-3 py-1 font-medium text-md group ${open ? 'text-red-700' : 'text-gray-800 hover:text-red-700 transition duration-300 ease-in-out'}`}
-                            >
-                              <span>{link.name}</span>
-                              <ChevronDownIcon
-                                className={`w-5 h-5 ml-2 transform duration-300 ${open ? 'rotate-180 text-red-700' : 'text-gray-600 group-hover:text-red-700'}`}
-                                aria-hidden="true"
-                              />
-                            </Menu.Button>
-                            
-                            
-                            <Menu.Items className="z-20 mt-3 absolute w-52 right-0 rounded-xl bg-white filter drop-shadow p-2.5 space-y-1">
-                              {link.submenu.map((subLink, i) => (
-                                <Menu.Item key={i}>
-                                  <Link href={subLink.link}>
-                                    <a 
-                                      className={`block rounded-lg py-3.5 px-5 font-medium ${router.pathname == subLink.link ? 'bg-gray-50 text-red-700' : 'text-gray-800 hover:bg-gray-50 hover:text-red-700 transition duration-300 ease-in-out'}`}
-                                    >
-                                      {subLink.name}
-                                    </a>
-                                  </Link>
-                                </Menu.Item>
-                              ))}
-                            </Menu.Items>
-                            
-                          </>
-                        )}
-                      </Menu>
-                      
-                    ) : (
-                      <Link key={index} href={link.link}>
-                        <a className={`px-3 py-1 font-medium text-md ${router.pathname == link.link ? 'text-red-700' : 'text-gray-800 transition duration-300 ease-in-out hover:text-red-700'}`}>
-                          {link.name}
-                        </a>
-                      </Link>
-                    )
-                  )}
+                {/* Search */}
+                {/* <div className="relative w-full h-10 ml-6 max-w-xxs rounded-3xl">
+                  <form className="transition duration-300 ease-in-out rounded-3xl group">
+                    <div className="absolute inset-y-0 flex items-center left-3">
+                      <SearchIcon className="w-5 h-5 text-gray-400" />
+                    </div>
+                    <input 
+                      type="email" 
+                      className="w-full h-10 px-10 py-3 text-sm leading-5 text-gray-800 transition duration-300 ease-in-out bg-white border border-gray-200 hover:bg-gray-50 rounded-3xl focus:outline-none focus:ring-2 focus:ring-red-100 focus:bg-gray-50" 
+                      required 
+                      placeholder="Search..."  
+                      autoComplete="email" 
+                    />
+                  </form>
+                </div> */}
 
-                </div>
+                {/* Hamburger menu button */}
+                <Disclosure.Button className="flex items-center justify-center p-3 ml-6 transition duration-300 ease-in-out cursor-pointer rounded-xl bg-gray-50 hover:bg-gray-100 md:hidden group focus:outline-none">
+                  <span className={`relative w-4 h-3.5 transition duration-500 ease-in-out transform rotate-0 ${open ? 'js-hamburger-open' : ''}`}>
+                    <span className="absolute top-0 left-0 block w-full h-0.5 transition duration-300 ease-in-out transform rotate-0 bg-gray-600 rounded-full opacity-100 group-hover:bg-gray-900" />
+                    <span className="absolute left-0 block w-full h-0.5 transition duration-300 ease-in-out transform rotate-0 bg-gray-600 rounded-full opacity-100 top-1.5 group-hover:bg-gray-900" />
+                    <span className="absolute left-0 block w-full h-0.5 transition duration-300 ease-in-out transform rotate-0 bg-gray-600 rounded-full opacity-100 top-1.5 group-hover:bg-gray-900" />
+                    <span className="absolute left-0 block w-full h-0.5 transition duration-300 ease-in-out transform rotate-0 bg-gray-600 rounded-full opacity-100 top-3 group-hover:bg-gray-900" />
+                  </span>
+                </Disclosure.Button>
               </div>
-
-              {/* Search */}
-              {/* <div className="relative w-full h-10 ml-6 max-w-xxs rounded-3xl">
-                <form className="transition duration-300 ease-in-out rounded-3xl group">
-                  <div className="absolute inset-y-0 flex items-center left-3">
-                    <SearchIcon className="w-5 h-5 text-gray-400" />
-                  </div>
-                  <input 
-                    type="email" 
-                    className="w-full h-10 px-10 py-3 text-sm leading-5 text-gray-800 transition duration-300 ease-in-out bg-white border border-gray-200 hover:bg-gray-50 rounded-3xl focus:outline-none focus:ring-2 focus:ring-red-100 focus:bg-gray-50" 
-                    required 
-                    placeholder="Search..."  
-                    autoComplete="email" 
-                  />
-                </form>
-              </div> */}
-
-              {/* Hamburger menu button */}
-              <Disclosure.Button className="flex items-center justify-center p-3 ml-6 transition duration-300 ease-in-out cursor-pointer rounded-xl bg-gray-50 hover:bg-gray-100 md:hidden group focus:outline-none">
-                <span className={`relative w-4 h-3.5 transition duration-500 ease-in-out transform rotate-0 ${open ? 'js-hamburger-open' : ''}`}>
-                  <span className="absolute top-0 left-0 block w-full h-0.5 transition duration-300 ease-in-out transform rotate-0 bg-gray-600 rounded-full opacity-100 group-hover:bg-gray-900" />
-                  <span className="absolute left-0 block w-full h-0.5 transition duration-300 ease-in-out transform rotate-0 bg-gray-600 rounded-full opacity-100 top-1.5 group-hover:bg-gray-900" />
-                  <span className="absolute left-0 block w-full h-0.5 transition duration-300 ease-in-out transform rotate-0 bg-gray-600 rounded-full opacity-100 top-1.5 group-hover:bg-gray-900" />
-                  <span className="absolute left-0 block w-full h-0.5 transition duration-300 ease-in-out transform rotate-0 bg-gray-600 rounded-full opacity-100 top-3 group-hover:bg-gray-900" />
-                </span>
-              </Disclosure.Button>
-      
+            </div>
+            <div className="flex justify-end xs:hidden w-full mt-2">
+              <div
+                className={`px-2 lg:py-1 mr-3 bg-gray-100 ${locale === 'en' ? 'bg-red-400' : ''} hover:cursor-pointer`}
+                onClick={() => changeLocale('en')}
+              >
+                EN
+              </div>
+              <div
+                className={`px-2 lg:py-1 bg-gray-100 ${locale === 'ru' ? 'bg-red-400' : ''} hover:cursor-pointer`}
+                onClick={() => changeLocale('ru')}
+              >
+                RU
+              </div>
             </div>
             
           </nav>

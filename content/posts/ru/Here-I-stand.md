@@ -1,6 +1,6 @@
 ---
-title: "Here I stand. I cannot do otherwise"
-description: "Many other people would like to stand next to us, shoulder to shoulder, to say No to the Russian Empire. But the empire frightens and fetters people with fear"
+title: "Я стою здесь, и  не могу иначе."
+description: "Много других людей хотели бы стать рядом, плечом к плечу, чтобы сказать Нет Российской империи. Но империя пугает и сковывает людей страхом."
 image: "/images/posts/hands.jpg"
 date: "2023-05-31T16:56:47+06:00"
 author: "Maria Ochir"
@@ -10,49 +10,51 @@ category: "Opinions"
 tags: [Oirats, Kalmyks, Captive Nations]
 group: "Featured"
 ---
-Martin Luther, the initiator of the Reformation in the Catholic religion, once said so. We, too, can say, “We stand here because we cannot do otherwise!”. Many other people would like to stand next to us, shoulder to shoulder, to say No to the Russian Empire. But the empire frightens people and fetters them with fear: for life, for property, for sources of funding.
+Так сказал когда то Мартин Лютер - инициатор реформации в католической религии. Мы тоже можем сказать, Мы стоим здесь, потому что не можем иначе. Много других людей хотели бы стать рядом, плечом к плечу с нами, чтобы сказать Нет Российской империи. Но империя пугает и сковывает людей страхом: за жизнь, за собственность, за средства к существованию.
 
-###  Russia's war to seize Ukraine
+###  Война России по захвату Украины
 
-The war of Russia against Ukraine is the war of the empire for the transformation of the sovereign Ukrainian state into a Russian colony. For us, the peoples of the national republics: Ichkeria, Ingushetia, Oirat-Kalmykia, Sakha-Yakutia, Tatarstan, Bashkortostan, Buryatia, all of us still in the internal colonies of the Russian Empire, it is especially clear that the Ukrainians’ heroic resistance is a struggle for freedom from the empire, for the right to live as they themselves want, and not as Moscow orders them to.
+Война России против Украины является войной империи за превращение суверенного украинского государства в русскую колонию. Нам, народам национальных республик: Ичкерии, Ингушетии, Ойрат-Калмыкии, Саха-Якутии, Татарстана, Башкортостана, Бурятии, всем нам, все еще находящимся во внутренних  колониях Российской империи, особенно понятно, что героическое сопротивление украинцев - это борьба за свободу от империи, за право жить так, как они сами хотят, а не так как им приказывает Москва.
 
-Since February 24, 2022, so many innocent Ukrainians have died: civilians and soldiers, so many cities and towns have been destroyed. And all this, only because the Russian Empire wanted to seize and make Ukraine its obedient colony. This Empire must be destroyed! The time for empire is over!
+С  24 февраля 2022 года  погибло столько ни в чем не повинных украинцев: мирных граждан и солдат, разрушено столько городов и поселков. И все это , только из за того, что Российская империя захотела захватить и сделать из Украины свою послушную  колонию. Эта Империя должна быть разрушена! Время империи вышло!
 
-### How did the Russian Empire appear?
+Наша общая цель – полная победа Украины, возвращение всех ее территорий, наказание страны агрессора выплатой репараций, люстрацией участников войны и выдачей военных преступников.
 
-Until 1547, Moscow was small in territory and insignificant politically. It was called the Grand Duchy of Moscow. After the forcible annexation of Novgorod Republic in 1478 and the lands in the north, it became known as the Tsardom of Russia. The Tsardom of Russia began to be called an empire in 1721, when Tsar Peter I assumed the title of Emperor of All Russia.
-  
-In 1552, the troops of Ivan the Terrible took the capital city of the Kazan Khanate  and 4 years later the Astrakhan Khanate was conquered. So the Russian Empire has expanded its territories to the east to Idel River, which they renamed into the Volga, and still call it “the Great Russian River”, although seven different nations live on the banks of the Idel: Chuvashs, Mari El, Tatars, Udmurts, Bashkorts, Oirat-Kalmyks, Kazakhs.
+### Как появилась Российская империя?
+
+До 1547 года Москва была небольшой по территории и незначительной в политическом отношении. Оно называлось Великим княжеством Московским. После насильственного присоединения Новгорода и земель на севере , он стало называться Русское царство. Империей Русское царство стало называться в 1721 г., когда царь Петр 1 принял титул  Императора Всероссийского.
+
+В 1552 г. была взята войсками Ивана Грозного столица Казанского ханства город Казань, через 4 года - Астраханское  ханство, так Русское царство расширило свои территории на восток до реки Идель, которую они переименовали в Волгу и до сих пор называют ее Великой русской рекой, хотя на берегах Идель проживают 7 народов: чуваши, мари-эл, татары, удмурты, башкорты, калмыки, казахи.
  
-In 17th-19th centuries, the territories of Siberia and the Far East, Central Asia and the North Caucasus were captured. Throughout history the empire led the conquest by fire and sword and enslavement of people.  
+В 17-19 веках были захвачены территории Сибири и Дальнего Востока, Средней Азии и Северного Кавказа. На протяжении всей истории империя вела завоевание огнем и мечом и порабощение людей. 
 
-All nations put up a fierce resistance. For example, the Russian-Buryat wars lasted for 137 years. The Bashkorts raised numerous uprisings for several centuries. The empire waged a war for the conquest of the North Caucasus for more than 100 years. Only 3% of the population of Circassians remained after the war.
+Все народы оказали ожесточенное сопротивление. Например, русско-бурятские войны длились 137 лет. Башкорты поднимали многочисленные восстания на протяжении нескольких столетий. Империя вела войну за завоевание Северного Кавказа более 100 лет. Только 3% населения черкесов осталось после войны.
 
-### How many non-Russians are in Russia?
+### Сколько нерусских в России?
 
-For politicians and the world community, Russia continues to be associated only with ethnic Russians, Orthodox Christians, and white Europeans. While about 40 million people live in 21 national republics with the status of subjects of the federation, and in 4 autonomous national districts. Among the peoples there are representatives of all world religions: Buddhists, Muslims, Christians. Their native languages are Turkic, Mongolian Finno-Ugric, and Caucasian. Each of the national republics has a head of the republic, a government consisting of ministries and departments, its own parliament, its own coat of arms, flag and anthem. The borders of the national republics are recognized by law. Thus, the republics have all the signs of statehood. But this is all on paper, de jure, but in fact de facto, all national republics are colonies. Under Article 1 of the UN Charter, colonized peoples have the right to self-determination.
-The territories of the republics and autonomous regions make up 75% of the total area of the Russian Empire, where more than 80% of natural resources are extracted. That is why the colonies are beneficial to Moscow, but is Moscow beneficial to the colonies?
+Для политиков и мирового сообщества Россия продолжает ассоциироваться только с этническими русскими, православными христианами и белыми европейцами. При этом в 21 национальной республике со статусом субъекта федерации и в 4 автономных национальных округах проживает около 40 миллионов человек. Среди народов есть представители всех мировых религий: буддисты, мусульмане, христиане. Их родными языками являются тюркский, монгольский, финно-угорский и кавказский. Каждая из национальных республик имеет главу республики, правительство, состоящее из министерств и ведомств, свой парламент, свой герб, флаг и гимн. Границы национальных республик признаются законом. Таким образом, республики имеют все признаки государственности. Но это все на бумаге, де-юре, а на деле де-факто все национальные республики - колонии. Согласно статье 1 Устава ООН, колонизированные народы имеют право на самоопределение.
+Территории республик и автономных областей составляют 75 % общей площади Российской империи, где добывается более 80 % природных ресурсов. Вот почему колонии выгодны Москве, но выгодна ли Москва колониям?
 
-### The collapse of the empire does not begin these days, it ends! Why?
+### Распад империи не начинается в наши дни, он заканчивается! Почему?
 
-The Soviet Union was much larger than today's Russia because it included 15 more unified republics. In addition, today's six Eastern European countries such as Bulgaria, Romania, Hungary, Czechoslovakia, Poland and the GDR were shackled by the chains of the Soviet empire. They were called the countries of the Eastern Bloc. In 1991, 15 union republics: Estonia, Lithuania, Latvia, Belarus, Ukraine, Moldova, Georgia, Armenia, Azerbaijan, Turkmenistan, Tajikistan, Uzbekistan and Kazakhstan became sovereign states. This allowed the countries of the Eastern bloc to get out from under the iron hand of the empire. In 1994, the last Russian troops were withdrawn from East Germany. Thus transpired the beginning of the collapse of the empire.
+Советский Союз был намного больше, чем сегодняшняя Россия, потому что он включал в себя еще 15 объединенных республик. Кроме того, сегодняшние шесть стран Восточной Европы, такие как Болгария, Румыния, Венгрия, Чехословакия, Польша и ГДР, были скованы цепями советской империи. Их называли странами Восточного блока. В 1991 году 15 союзных республик: Эстония, Литва, Латвия, Беларусь, Украина, Молдова, Грузия, Армения, Азербайджан, Туркменистан, Таджикистан, Узбекистан и Казахстан стали суверенными государствами. Это позволило странам Восточного блока выйти из-под железной руки империи. В 1994 году из Восточной Германии были выведены последние российские войска. Так произошло начало распада империи.
 
-The completion of the collapse of the empire will happen, perhaps soon, when 21 national republics and a number of regions will exercise their right to sovereignty.
+Завершение распада империи произойдет, возможно, скоро, когда 21 национальная республика и ряд областей осуществят свое право на суверенитет.
 
-### Why is the collapse of the empire beneficial to the world community?
+### Почему распад империи выгоден мировому сообществу?
 
-When, 30 years ago, in 1991, the collapse of the empire began and 15 union republics became sovereign states peacefully, this turned out to be beneficial for the democratic countries of Western Europe and the United States. Finally,  the arms race ended with the Soviet Union, because it was gone. Reducing military spending over the past 30 years has allowed the West to use the savings for peaceful purposes, for the well-being of its citizens. Three countries - Ukraine, Belarus and Kazakhstan voluntarily renounced the deployment of nuclear weapons on their territories in order to make the world safer.
+Когда 30 лет назад, в 1991 году, начался распад империи и мирным путем 15 союзных республик стали суверенными государствами, это оказалось на руку демократическим странам Западной Европы и США. Наконец, гонка вооружений закончилась вместе с Советским Союзом, потому что его не стало. Сокращение военных расходов за последние 30 лет позволило Западу использовать сбережения в мирных целях, на благо своих граждан. Три страны - Украина, Беларусь и Казахстан добровольно отказались от размещения ядерного оружия на своей территории, чтобы сделать мир безопаснее.
 
-If the national republics and regions of Russia exercise their right to sovereignty, then these new countries will be small in terms of economic potential. They will never be able to pose a military threat to the whole world, which is the aggressor country Russia with its nuclear weapons. Mining in new countries will be limited to their small needs, which will have a positive environmental effect on climate and global warming. Moreover, a number of sovereign countries, such as Georgia, Moldova, Kazakhstan, Uzbekistan, Kyrgyzstan, Tajikistan and Mongolia, will finally be able to get out from under  the shadow of a strong neighbor and reach the second stage of decolonization. Finally, the time will come when these countries in their foreign and domestic policies will proceed from their own interests, and not voluntarily follow the instructions of Moscow. In the meantime, they have to do this under the threat of a military invasion or a hybrid war. The entire Eurasian continent will breathe freely. The number and political weight of democratic countries will noticeably increase throughout the world.
+Если национальные республики и области России реализуют свое право на суверенитет, то эти новые страны будут малы по своему экономическому потенциалу. Они никогда не смогут представлять военную угрозу всему миру, которым является страна-агрессор Россия с ее ядерным оружием. Добыча полезных ископаемых в новых странах будет ограничена их небольшими потребностями, что положительно скажется на экологии климата и глобальном потеплении. Более того, ряд суверенных стран, таких как Грузия, Молдова, Казахстан, Узбекистан, Киргизия, Таджикистан и Монголия, наконец-то смогут выйти из-под тени сильного соседа и выйти на второй этап деколонизации. Наконец, придет время, когда эти страны в своей внешней и внутренней политике будут исходить из собственных интересов, а не добровольно следовать указаниям Москвы. А пока им приходится это делать под угрозой военного вторжения или гибридной войны. Весь евразийский континент вздохнет свободно. Во всем мире заметно возрастут количество и политический вес демократических стран.
 
-### So far, most Western politicians are still guided by the opinion of the Russian opposition elite, under the leadership of Khodorkovsky and Kasparov, as well as Navalny.
+### Пока что большинство западных политиков по-прежнему ориентируются на мнение российской оппозиционной элиты во главе с Ходорковским и Каспаровым, а также Навальным.
 
-It is better to call this opposition elite the Moscow one, since it represents the interests of an exclusively privileged layer of the capital, prospering at the expense of the national republics and regions. The Moscow opposition elite is trying to promote its vision of a United, Indivisible Russia with Nuclear Weapons at the political and public levels. This position is 100% consistent with the desire of Putin and the Kremlin. Another common point, the Moscow opposition "sees no flaws in the Kremlin's national policy". This means that both Putin and Khodorkovsky want to preserve the Empire and continue to steal the resources of the colonies in order to obtain fabulous profits.
+Эту оппозиционную элиту лучше назвать московской, поскольку она представляет интересы исключительно привилегированного слоя столицы, процветающего за счет национальных республик и областей. Московская оппозиционная элита пытается продвигать свое видение единой неделимой России с ядерным оружием на политическом и общественном уровнях. Эта позиция на 100% соответствует желанию Путина и Кремля. Еще один общий момент: московская оппозиция «не видит изъянов в национальной политике Кремля». Это значит, что и Путин, и Ходорковский хотят сохранить Империю и продолжают воровать ресурсы колоний для получения баснословных прибылей.
 
-### Just like Putin, the Moscow opposition elite in the person of Khodorkovsky and the Navalny Foundation frighten the whole world saying that the collapse of Russia will lead to bloodshed and violence.
+### Как и Путин, московская оппозиционная элита в лице Ходорковского и Фонда Навального пугают весь мир тем, что развал России приведет к кровопролитию и насилию.
 
-But at the same time they do not realize, in fact, the worst has already happened. What could happen worse than a war in Ukraine? What could be worse than what happened in Bucha, Irpen and Kramatorsk? What could be worse than the torture and burning of soldiers in Olenivka? What could be worse than a nuclear threat to the whole world coming from a single indivisible Russia?
+Но при этом не осознают, на самом деле самое страшное уже случилось. Что может быть хуже войны на Украине? Что может быть хуже того, что произошло в Буче, Ирпене и Краматорске? Что может быть страшнее пыток и сожжений солдат в Оленевке? Что может быть хуже ядерной угрозы всему миру, исходящей от единой неделимой России?
 
-No Russian Empire! Glory to Ukraine!
+Нет Российской Империи! Слава Украине!
 
-***Alga, Uralan***, free peoples of Adygea, Altai Republic, Bashkortostan, Buryatia, Dagestan, Ingushetia, Kabardino-Balkaria, Oirat-Kalmykia, Karachay-Cherkessia, Karelia, Komi Republic, Mari El, Mordovia, Sakha (Yakutia), North Ossetia - Alania, Tatarstan, Tuva, Udmurtia, Khakassia, Ichkeria, Chuvashia - Bulgaria.
+***Алга, Уралан***, свободные народы Адыгеи, Республики Алтай, Башкортостана, Бурятии, Дагестана, Ингушетии, Кабардино-Балкарии, Ойрат-Калмыкии, Карачаево-Черкесии, Карелии, Республики Коми, Марий Эл, Мордовии, Саха (Якутия), Северная Осетия — Алания, Татарстан, Тува, Удмуртия, Хакасия, Ичкерия, Чувашия — Болгария.
