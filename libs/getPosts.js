@@ -21,6 +21,7 @@ export function getPosts(locale) {
         content,
       }
     })
+    .filter(post => !post.frontmatter.draft)
 
   return posts
 }

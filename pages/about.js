@@ -3,6 +3,7 @@ import AboutHeader from '../components/about/AboutHeader'
 import AboutContent from '../components/about/AboutContent'
 import Docs from '../components/about/Docs'
 import Partners from '../components/about/Partners'
+import Links from '../components/about/Links'
 // import Authors from '../components/about/Authors'
 import Members from '../components/about/Members'
 import Careers from '../components/about/Careers'
@@ -21,6 +22,7 @@ export default function About({about, authors, members, newsletter}) {
       <AboutContent content={about.content} />
       <Docs docSection={about.frontmatter.doc_section} />
       <Partners partnerSection={about.frontmatter.partner_section} />
+      <Links linkSection={about.frontmatter.link_section} />
       {/* <Authors authorSection={about.frontmatter.author_section} authors={authors} /> */}
       <Members memberSection={about.frontmatter.member_section} members={members} />
       {/* <Careers careers={about.frontmatter.careers} /> */}
@@ -30,7 +32,6 @@ export default function About({about, authors, members, newsletter}) {
 }
 
 export async function getStaticProps({ locale }) {
-  console.log('locale: ', locale);
   return {
     props: {
       authors: getAuthors(locale),
