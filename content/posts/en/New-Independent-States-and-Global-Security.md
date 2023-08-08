@@ -9,6 +9,7 @@ views: 850
 category: "News"
 tags: [Free Nations League, Captive Nations, Kalmyks, Non-Russians]
 group: "Featured"
+draft: true
 ---
 New Independent States and Global Security
 
