@@ -18,7 +18,7 @@ export function getDocs(locale) {
         content
       }
     });
-
+    
   return docs;
 }
 

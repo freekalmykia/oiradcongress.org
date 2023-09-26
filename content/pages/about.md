@@ -10,6 +10,8 @@ doc_section:
   docs:
     - name: "Declaration on State Independence of the Republic of Kalmykia"
       link: "/docs/declaration-of-independence"
+    - name: "Letter to the Prime Minister of Japan, Mr. Fumio Kishida"
+      link: "/docs/letter-to-prime-minister-of-Japan"
 partner_section:
   heading: "Organizations and activist groups of captive nations"
   partners:
