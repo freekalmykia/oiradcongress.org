@@ -4,6 +4,9 @@ const nextConfig = {
   i18n: {
     locales: ['en', 'ru'],
     defaultLocale: 'en'
+  },
+  images: {
+    domains: ['img.youtube.com']
   }
 }
 
