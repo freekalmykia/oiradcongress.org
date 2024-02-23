@@ -12,8 +12,17 @@ import SidebarSocialLinks from '../../components/sidebar/SidebarSocialLinks'
 import BannerArticle from '../../components/shared/BannerArticle'
 import Pagination from '../../components/shared/Pagination'
 import { getContentPage } from '../../libs/getContentPage'
-import { getPostsInCategory, getPopularPostsInCategory } from '../../libs/getPosts'
+import { getPostsInCategory, getPopularPostsInCategory, getPopularPosts } from '../../libs/getPosts'
 import { getAuthors } from '../../libs/getAuthors'
+import { getVideos } from '../../libs/getVideos'
+
+const getMetaTitle = (slug, category) => slug !== 'videos'
+  ? `Showing posts in ${category.name}`
+  : `Showing videos`;
+
+const getSideBarArticlesHeader = (slug, category) => slug !== 'videos'
+  ? `Most read in ${category.name}`
+  : 'Most read';
 
 export default function CategoryPage({
   slug,
@@ -21,10 +30,11 @@ export default function CategoryPage({
   authors,
   newsletter,
   posts,
-  popularPosts
+  popularPosts,
+  videos
 }) {
   return (
-    <Layout metaTitle={`Showing posts in ${category.name}`}>
+    <Layout metaTitle={getMetaTitle(slug, category)}>
       <CategoryHeader category={category} />
 
       {/* Feed with Sidebar */}
@@ -32,12 +42,12 @@ export default function CategoryPage({
         <div className="w-full lg:grid lg:gap-8 xl:gap-12 lg:grid-cols-3">
           
           <div className="col-span-2">
-            <SingleColFeed posts={posts.slice(0,6)} authors={authors} />
+            <SingleColFeed posts={posts?.slice(0,6)} videos={videos} authors={authors} />
           </div>
 
           {/* Sidebar */}
           <div className="w-full mt-12 space-y-8 sm:mt-16 lg:mt-0 lg:col-span-1">
-            <SidebarArticles posts={popularPosts} header={`Most read in ${category.name}`} />
+            <SidebarArticles posts={popularPosts} header={getSideBarArticlesHeader(slug, category)} />
             <SidebarSocialLinks />
             {/* <SidebarAd /> */}
           </div>
@@ -45,7 +55,7 @@ export default function CategoryPage({
         </div>
       </section>
 
-      {posts.length >= 8 && (
+      {posts?.length >= 8 && (
         <>
           <BannerArticle post={posts[6]} authors={authors} />
           
@@ -53,7 +63,7 @@ export default function CategoryPage({
             
             {/* Articles */}
             <div className="pb-8 mb-6 border-b-2 border-gray-100 sm:pb-10 sm:mb-10">
-              <SingleColFeed posts={posts.slice(7,13)} authors={authors} />
+              <SingleColFeed posts={posts?.slice(7,13)} authors={authors} />
             </div>
 
             <Pagination />
@@ -93,16 +103,28 @@ export async function getStaticProps({ locale, params: { slug } }) {
     'utf8'
   )
 
-  const { data: frontmatter } = matter(fileContents)
+  const { data: frontmatter } = matter(fileContents);
+
+  if (slug !== 'videos') {
+    return {
+      props: {
+        slug,
+        frontmatter,
+        authors: getAuthors(locale),
+        newsletter: getContentPage('content/shared/newsletter.md'),
+        popularPosts: getPopularPostsInCategory(slug, locale),
+        posts: getPostsInCategory(slug, locale)
+      },
+    };
+  }
 
   return {
     props: {
       slug,
       frontmatter,
-      authors: getAuthors(locale),
       newsletter: getContentPage('content/shared/newsletter.md'),
-      popularPosts: getPopularPostsInCategory(frontmatter.name, locale),
-      posts: getPostsInCategory(frontmatter.name, locale)
-    },
-  };
+      popularPosts: getPopularPosts(locale),
+      videos: getVideos(locale)
+    }
+  }
 }

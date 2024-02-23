@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function NextArticle({doc}) {
+export default function NextDoc({doc}) {
   return (
     <section className="relative w-full bg-fixed bg-center bg-no-repeat bg-cover h-96" style={{backgroundImage: `url(${doc.frontmatter.image})`}}>
       <div className="absolute inset-0 bg-gray-900/50" />

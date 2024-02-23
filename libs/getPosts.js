@@ -50,18 +50,18 @@ export function getPopularPosts(locale) {
   return archivedPosts.sort(sortByViews).slice(0,6)
 }
 
-export function getPostsInCategory(category, locale) {
+export function getPostsInCategory(slug, locale) {
   const posts = getPosts(locale)
 
   const postsInSameCategory = posts.filter((post) => {
-    return post.frontmatter.category == category
+    return post.frontmatter.category.toLowerCase() == slug
   })
 
   return postsInSameCategory.sort(sortByDate)
 }
 
-export function getPopularPostsInCategory(category, locale) {
-  let posts = getPostsInCategory(category, locale)
+export function getPopularPostsInCategory(slug, locale) {
+  let posts = getPostsInCategory(slug, locale)
   return posts.sort(sortByViews).slice(0,4)
 }
 

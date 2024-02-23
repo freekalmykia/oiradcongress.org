@@ -17,6 +17,10 @@ export default {
       "link": "/categories/culture"
     },
     {
+      "name": "Videos",
+      "link": "/categories/videos"
+    },
+    {
       "name": "Congress",
       "link": "#",
       "submenu": [
