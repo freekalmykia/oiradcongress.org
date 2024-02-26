@@ -1,4 +1,4 @@
 ---
 name: "Видео"
-image: "/images/categories/category-05.png"
+image: "/images/categories/category-01.jpg"
 ---

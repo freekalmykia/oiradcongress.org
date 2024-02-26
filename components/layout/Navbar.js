@@ -166,47 +166,50 @@ export default function Navbar() {
 
           {/* Mobile menu */}
           <Disclosure.Panel>
-            <nav className=" md:hidden" aria-label="Global" id="mobile-menu">
-              <div className="px-2 pt-2 pb-3 space-y-1">
-
-                {menuLinks.mainMenu.map((link, i) =>
-                  !link.submenu && (
-                    <Link href={link.link} key={i}>
-                      <a 
-                        className={`block px-4 py-3 font-medium rounded-lg ${router.pathname == link.link ? 'bg-gray-50 text-red-700' : 'text-gray-800 hover:bg-gray-50 hover:text-red-700 transition duration-300 ease-in-out'}`}
-                        aria-current="page"
-                      >
-                        {link.name}
-                      </a>
-                    </Link>
-                  )
-                )}
-              </div>
-
-              <div className="pt-4 pb-3 border-t border-gray-300/70">
-                <div className="px-6 mt-2 text-xs font-medium tracking-widest text-gray-500 uppercase">Pages</div>
-                <div className="px-2 mt-3 space-y-1">
-
+            {({ close }) => (
+              <nav className=" md:hidden" aria-label="Global" id="mobile-menu">
+                <div className="px-2 pt-2 pb-3 space-y-1">
                   {menuLinks.mainMenu.map((link, i) =>
-                    link.submenu && (
-                      <Fragment key={i}>
-                        {link.submenu.map((subLink, j) => (
-                          <Link href={subLink.link} key={j}>
-                            <a 
-                              className={`block px-4 py-2 font-medium rounded-lg ${router.pathname == subLink.link ? 'bg-gray-50 text-red-700' : 'text-gray-600 hover:bg-gray-50 hover:text-red-700 transition duration-300 ease-in-out'}`}
-                              aria-current="page"
-                            >
-                              {subLink.name}
-                            </a>
-                          </Link>
-                        ))}
-                      </Fragment>
+                    !link.submenu && (
+                      <Link href={link.link} key={i}>
+                        <a 
+                          className={`block px-4 py-3 font-medium rounded-lg ${router.pathname == link.link ? 'bg-gray-50 text-red-700' : 'text-gray-800 hover:bg-gray-50 hover:text-red-700 transition duration-300 ease-in-out'}`}
+                          aria-current="page"
+                          onClick={close}
+                        >
+                          {link.name}
+                        </a>
+                      </Link>
                     )
                   )}
-                  
                 </div>
-              </div>
-            </nav>
+
+                <div className="pt-4 pb-3 border-t border-gray-300/70">
+                  <div className="px-6 mt-2 text-xs font-medium tracking-widest text-gray-500 uppercase">Pages</div>
+                  <div className="px-2 mt-3 space-y-1">
+
+                    {menuLinks.mainMenu.map((link, i) =>
+                      link.submenu && (
+                        <Fragment key={i}>
+                          {link.submenu.map((subLink, j) => (
+                            <Link href={subLink.link} key={j}>
+                              <a 
+                                className={`block px-4 py-2 font-medium rounded-lg ${router.pathname == subLink.link ? 'bg-gray-50 text-red-700' : 'text-gray-600 hover:bg-gray-50 hover:text-red-700 transition duration-300 ease-in-out'}`}
+                                aria-current="page"
+                                onClick={close}
+                              >
+                                {subLink.name}
+                              </a>
+                            </Link>
+                          ))}
+                        </Fragment>
+                      )
+                    )}
+                    
+                  </div>
+                </div>
+              </nav>
+            )}
           </Disclosure.Panel> 
         </>
       )}
