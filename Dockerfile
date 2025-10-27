@@ -1,5 +1,5 @@
 # Install dependencies only when needed
-FROM node:alpine AS deps
+FROM node:22-alpine AS deps
 RUN apk update && apk add --no-cache libc6-compat && apk add git
 WORKDIR /app
 COPY package.json yarn.lock ./
@@ -7,7 +7,7 @@ RUN yarn install --immutable
 
 
 # Rebuild the source code only when needed
-FROM node:alpine AS builder
+FROM node:22-alpine AS builder
 # add environment variables to client code
 # ARG NEXT_PUBLIC_BACKEND_URL
 # ARG NEXT_PUBLIC_META_API_KEY
@@ -25,7 +25,7 @@ RUN yarn build
 RUN if [ "$BRANCH" = "master" ] ; then yarn generate-sitemap ; fi
 
 # Production image, copy all the files and run next
-FROM node:alpine AS runner
+FROM node:22-alpine AS runner
 ARG PORT
 ENV PORT=$PORT
 WORKDIR /app
